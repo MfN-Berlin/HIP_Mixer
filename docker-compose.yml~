@@ -1,0 +1,74 @@
+version: '3'
+services:
+   db:
+      image: mariadb:10.4
+      container_name: ${DB_CONTAINER_NAME}
+      environment:
+        MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      volumes:
+      - "./gdm/db:/var/lib/mysql"
+
+   gdm:
+      image: hip_audiogrambase_gdm
+      container_name: ${GDM_NAME}
+      environment:
+       - DB_DATABASE:${DB_DATABASE}
+       - DB_HOST:${DB_HOST}
+       - DB_USERNAME:${DB_USERNAME}
+      ports:
+       - "${GDM_PORT}:80"
+      volumes:
+       - "./gdm/custom:/usr/share/gdm/custom"
+       - "./gdm/tools:/usr/share/gdm/lib/tools"
+      links:
+       - db
+      entrypoint: /bin/bash ./custom/refresh.sh
+
+   bioacoustics-notebook:
+      image: aot29/bioacoustics-notebook:latest
+      container_name: bioacoustics-notebook
+      ports:
+        - "9081:8888"
+      volumes:
+        - "./notebook-home:/home/jovyan"
+      links:
+       - data_exchange
+
+   openrefine:
+      image: vimagick/openrefine
+      container_name: openrefine
+      ports:
+       - "3333:3333"
+      volumes:
+       - ./notebook-home:/data
+
+   data_exchange:
+      build: data_exchange
+      image: hip_data_exchange
+      container_name: hip_data_exchange
+      ports:
+       - "9082:5000"
+      volumes:
+        - "./data_exchange/src:/src"
+        - "./data_exchange/unittests:/unittests"
+        - "./audiogram_data:/data"
+      links:
+       - gdm
+       - redis
+      entrypoint: /bin/bash /src/entrypoint.sh
+       
+   redis:
+      image: redis:5.0.7
+      container_name: hip_redis
+
+   drupal:
+      image: hip_audiogrambase_drupal:latest
+      container_name: hip_audiogram_frontend
+      ports:
+         - "9090:80"
+      links:
+         - db
+      volumes:
+        - "./mount/default:/var/www/html/sites/default/"
+        - "./audiogram_frontend/mount/modules:/var/www/html/modules"
+        - "./audiogram_frontend/favicon.ico:/var/www/html/core/themes/bartik/favicon.ico"

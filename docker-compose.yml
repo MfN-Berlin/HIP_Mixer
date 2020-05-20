@@ -1,0 +1,9 @@
+version: '3'
+services:
+   bioacoustics-notebook:
+      image: aot29/bioacoustics-notebook:latest
+      container_name: bioacoustics-notebook
+      ports:
+        - "9081:8888"
+      volumes:
+        - "./notebook-home:/home/jovyan"
