@@ -1,3 +1,10 @@
 notebook-home/audio/Orca_Sonar_data/
 notebook-home/.octave_hist
 notebook-home/audio/core
+doc/*_INTERN.docx
+notebook-home/data/.~lock.*
+notebook-home/.ipynb_checkpoints
+notebook-home/.local
+doc/Woelfing_AirgunMaskingII_Vortrag_POLAR2018_Davos.ppt
+notebook-home/typescript
+notebook-home/.bash_history

@@ -1,535 +1,0 @@
-Script started on 2020-07-08 08:44:20+0000
-root@3439bccc6897:~# ls
- audio	 images   lowpass.plt   octave-workspace  'Sound propagation effects.ipynb'   typescript
-root@3439bccc6897:~# ls /[K[K[K[Kpwd
-/home/jovyan
-root@3439bccc6897:~# ls audio
-blue_whale_ship.mp3			      Orca_Sonar.aup	  RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
-etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav  Orca_Sonar_data	  RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
-etpb3_10xc-BlueWhaleSouthPacific-10x.wav      Orca_Sonar.mp3	  Sonar.wav
-killer-whale.mp3			      pfahlgruendung.mp3
-root@3439bccc6897:~# cd audio/
-root@3439bccc6897:~/audio# sox -n interference01.wav synth 1 sine 10
-root@3439bccc6897:~/audio# ls
-blue_whale_ship.mp3			      interference01.wav  Orca_Sonar_data     RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
-etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav  killer-whale.mp3	  Orca_Sonar.mp3      RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
-etpb3_10xc-BlueWhaleSouthPacific-10x.wav      Orca_Sonar.aup	  pfahlgruendung.mp3  Sonar.wav
-root@3439bccc6897:~/audio# lssox -n interference01.wav synth 1 sine 10[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[Ksox flanger [K[K[K[K[K[K[K[Kinterference01.wav interference01.wav [1@_[1@p[1@h[1@a[1@s[1@e[1@r[C[C[C[C[C p h a s e r [C 0 . 8 [C 0 . 7 4 [C 3 [C 0 . 4 [C 0 . 5 [1P [1P [1P [K[1P [1P [1P [K[1P [K[1P [1P [1P [1P [K[1P 9 [C o [1P 0 . 8 5 [C 4 [C 0 . 2 3 [C 1 . 3 [C - s 
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.9 0.85 4 0.23 1.3 -s [C[1@8[C[C[C[C[C[C[C[C[1P[1@1[C[C[C[C[C[1P[1@4[C[C[C[C[1P[1P[1P[1@2[1@~[1P[C[C[C[1P t 
-root@3439bccc6897:~/audio# ls -l au[K[K
-total 10372
--rw-r--r-- 1 jovyan 1001  270965 May 20 11:29 blue_whale_ship.mp3
--rw-r--r-- 1 jovyan 1001 2006870 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav
--rw-r--r-- 1 jovyan 1001  364094 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x.wav
--rw-r--r-- 1 root   root  192080 Jul  8 08:56 interference01_phaser.wav
--rw-r--r-- 1 root   root  192080 Jul  8 08:46 interference01.wav
--rwxr-x--- 1 jovyan 1001  800064 May 20 11:30 killer-whale.mp3
--rw------- 1 jovyan 1001    8037 May 20 14:01 Orca_Sonar.aup
-drwxrwxr-x 3 jovyan 1001    4096 May 20 14:01 Orca_Sonar_data
--rw-r--r-- 1 jovyan 1001  638416 May 20 15:01 Orca_Sonar.mp3
--rwxr-xr-x 1 jovyan 1001  398086 May 11 15:36 pfahlgruendung.mp3
--rw-r--r-- 1 jovyan 1001 4743528 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
--rw-r--r-- 1 jovyan 1001  860540 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
--rwxr-x--- 1 jovyan 1001  121056 May 20 11:30 Sonar.wav
-root@3439bccc6897:~/audio# ls -l [72@sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 1 0.24 2 -t[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kflaner[K[Kger
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav flanger[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l [K[72@sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 1 0.24 2 -t[C[1P[1@0[C[C[C[C[C[1P[1P[1P[C[C[C[C[C[1P s 
-Floating point exception (core dumped)
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 0 0 2 -s [1@.[1@1[C[C[1@.[1@1
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 0.1 0.1 2 -s [C[C[C[C[C[C[C[C[C[C[C[1P[1@1[1@0
-sox FAIL phaser: parameter `mod_speed' must be between 0.1 and 2
-sox FAIL phaser: usage: gain-in gain-out delay decay speed [ -s | -t ]
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 0.1 0.1 10 -s [1P[1P[1@0[1@.[1@1
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 0.1 0.1 0.1 -s [1P[1P[1P[1@1[1@0[1@0
-sox FAIL phaser: parameter `delay_ms' must be between 0 and 5
-sox FAIL phaser: usage: gain-in gain-out delay decay speed [ -s | -t ]
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 100 0.1 0.1 -s [1P[1P[1P[1@5[C[C[C[C[C[1P[1P[1P[1@5[1@0[1@0[C[C[C[C[1P[1P[1P[1@3
-sox FAIL phaser: parameter `decay' must be between 0 and 0.99
-sox FAIL phaser: usage: gain-in gain-out delay decay speed [ -s | -t ]
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 5 500 3 -s [1P[1@0[1@.[1@9[1@9
-sox FAIL phaser: parameter `decay' must be between 0 and 0.99
-sox FAIL phaser: usage: gain-in gain-out delay decay speed [ -s | -t ]
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 0.99 500 3 -s [1P[1P[1P[1P[1@5[C[C[C[C[1P[1P[1P[1@0[1@.[1@5
-sox FAIL phaser: parameter `mod_speed' must be between 0.1 and 2
-sox FAIL phaser: usage: gain-in gain-out delay decay speed [ -s | -t ]
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 5 0.5 3 -s [C[1P[1@2
-sox WARN phaser: warning: gain-in might cause clipping
-sox WARN phaser: warning: gain-out might cause clipping
-sox WARN phaser: phaser clipped 24948 samples; decrease volume?
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 5 0.5 2 -s [1P[1@0[1P[1@0
-sox WARN phaser: warning: gain-in might cause clipping
-sox WARN phaser: warning: gain-out might cause clipping
-sox WARN phaser: phaser clipped 19150 samples; decrease volume?
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.80 0.80 5 0.5 2 -s [1P[1P[1@7
-sox WARN phaser: warning: gain-in might cause clipping
-sox WARN phaser: warning: gain-out might cause clipping
-sox WARN phaser: phaser clipped 11650 samples; decrease volume?
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.80 0.7 5 0.5 2 -s [1P[1P[1@7
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.7 0.7 5 0.5 2 -s [1@80[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@80[C[C[C[C[C[C[C[C[C[C[C[C9 0.85[C[C[C[C[C[C[C[C[C[C[C[C3[C[C[C[C[3@0.99 500[C[C[C[C[C[C[3P5[C[C[C[C[C[C[C[C[C[C[4@100 0.1 0.1[C[C[C[C0.1[C[C[C[C[C[C[C[C[C[C[C[C[1P10[C[C[C[C[1P2[C[C[C[C[4P 0[C[C[C[C[C[Cflanger[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l [K[72@sox interference01.wav interference01_phaser.wav phaser 0.89 0.85 1 0.24 2 -t[C[1@9 0.85 4 0.23 1.3 -s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksox -n interference01.wav synth 1 sine 10[1P 10[1P 10[1P 10[1P 10p 10i 10n 10k 10n 10o 10i 10s 10e 10[C[C[C[K[K275[K[K[K[K[C[1P pinknoise2 pinknoise7 pinknoise5 pinknoise
-root@3439bccc6897:~/audio# sox -n interference01.wav synth 275 pinknoise[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinterference01.wav interference01_phaser.wav phaser 0.7 0.7 5 0.5 2 -s [C[1P[1@5[C[C[C[C[1P[1@5[C[C[C[1P[1@0[C[C[C[C[1P[1P[C[C[1P[1@0[1@.[1@0[1@0[1@2[1@8
-sox FAIL phaser: parameter `mod_speed' must be between 0.1 and 2
-sox FAIL phaser: usage: gain-in gain-out delay decay speed [ -s | -t ]
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.5 0.5 0 0 0.0028 -s [1P[1P[1P[1P[1@1
-Floating point exception (core dumped)
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.5 0.5 0 0 0.1 -s [1@.[1@1[C[C[1@.[1@1
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.5 0.5 0.1 0.1 0.1 -s [1P[1@8[C[C[C[C[1P[1@7[1@4[C[C[C[C[1P[1P[1P[1@3[1@.[1@0[C[C[C[C[1P[1@4[C[C[C[C[1P[1@5
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.8 0.74 3.0 0.4 0.5 -s [1P[1@9[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@8[1@5[C[C[1P[1@4[C[C[C[C[C[C[1P[1@2[1@3[C[C[C[C[1P[1P[1P[1@1[1@.[1@3
-root@3439bccc6897:~/audio# sox interference01.wav interference01_phaser.wav phaser 0.9 0.85 4.0 0.23 1.3 -s [1P[1@6[C[C[C[C[C[C[C[1P[1P[1@6[1@6[C[C[1P[1@3[C[C[C[C[C[C[C[1P[1P[1@6[C[C[C[C[1P[1P[1P[1@2[1@.[1@0[C[C[C[1P t 
-root@3439bccc6897:~/audio# cd ../
-root@3439bccc6897:~# ls
- audio	 images   lowpass.plt   octave-workspace  'Sound propagation effects.ipynb'   typescript
-root@3439bccc6897:~# mkdir src
-root@3439bccc6897:~# cd src
-root@3439bccc6897:~/src# pipe_test.py[K[K[K[K[K[K[K[K[K[K[K[Kaudacity
-bash: audacity: command not found
-root@3439bccc6897:~/src# sudo apt-get update
-0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu bionic InRelease
-0% [Connecting to security.ubuntu.com (91.189.91.39)]0% [1 InRelease gpgv 242 kB] [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.39)]                                                                                                     Get:2 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
-0% [1 InRelease gpgv 242 kB] [2 InRelease 9,645 B/88.7 kB 11%] [Connecting to security.ubuntu.com (91.189.91.39)]                                                                                                                 0% [1 InRelease gpgv 242 kB] [Waiting for headers] [Waiting for headers]                                                                        Get:3 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
-0% [1 InRelease gpgv 242 kB] [3 InRelease 6,205 B/74.6 kB 8%] [Waiting for headers]                                                                                   0% [3 InRelease 64.7 kB/74.6 kB 87%] [Waiting for headers]0% [2 InRelease gpgv 88.7 kB] [3 InRelease 64.7 kB/74.6 kB 87%] [Waiting for headers]                                                                                     Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-0% [2 InRelease gpgv 88.7 kB] [3 InRelease 64.7 kB/74.6 kB 87%] [4 InRelease 6,790 B/88.7 kB 8%]                                                                                                0% [2 InRelease gpgv 88.7 kB] [4 InRelease 12.7 kB/88.7 kB 14%]                                                               0% [4 InRelease 12.7 kB/88.7 kB 14%]0% [3 InRelease gpgv 74.6 kB] [4 InRelease 12.7 kB/88.7 kB 14%]                                                               Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [1,302 kB]
-0% [3 InRelease gpgv 74.6 kB] [5 Packages 3,689 B/1,302 kB 0%] [4 InRelease 17.9 kB/88.7 kB 20%]                                                                                                0% [5 Packages 137 kB/1,302 kB 11%] [4 InRelease 38.7 kB/88.7 kB 44%]                                                                     0% [5 Packages 444 kB/1,302 kB 34%]0% [4 InRelease gpgv 88.7 kB] [5 Packages 444 kB/1,302 kB 34%]                                                              0% [5 Packages 608 kB/1,302 kB 47%]                                   Get:6 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [869 kB]
-0% [5 Packages 819 kB/1,302 kB 63%] [6 Packages 4,991 B/869 kB 1%]                                                                  0% [6 Packages 171 kB/869 kB 20%]0% [5 Packages store 0 B] [Waiting for headers] [6 Packages 171 kB/869 kB 20%]                                                                              Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,406 kB]
-0% [5 Packages store 0 B] [7 Packages 51.8 kB/1,406 kB 4%] [6 Packages 190 kB/869 kB 22%]                                                                                         0% [7 Packages 208 kB/1,406 kB 15%] [6 Packages 252 kB/869 kB 29%]0% [7 Packages 1,276 kB/1,406 kB 91%] [6 Packages 538 kB/869 kB 62%]                                                                    0% [6 Packages 584 kB/869 kB 67%]                                 Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [102 kB]
-0% [8 Packages 0 B/102 kB 0%] [6 Packages 584 kB/869 kB 67%]0% [7 Packages store 0 B] [8 Packages 1,972 B/102 kB 2%] [6 Packages 584 kB/869 kB 67%]                                                                                       0% [7 Packages store 0 B] [6 Packages 611 kB/869 kB 70%]                                                        0% [6 Packages 658 kB/869 kB 76%]0% [8 Packages store 0 B] [6 Packages 658 kB/869 kB 76%]                                                        0% [6 Packages 658 kB/869 kB 76%]                                 0% [Working]0% [6 Packages store 0 B]                         0% [Waiting for headers]                        Get:9 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [89.0 kB]
-0% [9 Packages 0 B/89.0 kB 0%]                              0% [Working]0% [9 Packages store 0 B] [Waiting for headers]                                               Get:10 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1,003 kB]
-0% [9 Packages store 0 B] [10 Packages 0 B/1,003 kB 0%]                                                       0% [10 Packages 11.9 kB/1,003 kB 1%]0% [10 Packages 319 kB/1,003 kB 32%]0% [10 Packages 631 kB/1,003 kB 63%]0% [10 Packages 950 kB/1,003 kB 95%]                                    0% [Working]0% [10 Packages store 0 B]                          0% [Working]0% [Working]            Get:11 https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/ InRelease [3,626 B]
-0% [11 InRelease 0 B/3,626 B 0%]                                0% [Working]0% [11 InRelease gpgv 3,626 B]                              100% [Working]              Fetched 5,026 kB in 5s (975 kB/s)
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 65%Reading package lists... 65%Reading package lists... 66%Reading package lists... 66%Reading package lists... 74%Reading package lists... 74%Reading package lists... 75%Reading package lists... 75%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 86%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-root@3439bccc6897:~/src# sudo apt-get install audacity
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 65%Reading package lists... 65%Reading package lists... 66%Reading package lists... 66%Reading package lists... 74%Reading package lists... 74%Reading package lists... 75%Reading package lists... 75%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-The following additional packages will be installed:
-  audacity-data i965-va-driver libaacs0 libavcodec57 libavformat57 libavutil55 libbdplus0 libbluray2 libchromaprint1 libcrystalhd3 libflac++6v5 libgme0
-  liblilv-0-0 libmpg123-0 libnuma1 libopenjp2-7 libopenmpt0 libopus0 libportsmf0v5 libserd-0-0 libshine3 libsnappy1v5 libsord-0-0 libsoundtouch1 libsoxr0
-  libspeex1 libsratom-0-0 libssh-gcrypt-4 libsuil-0-0 libswresample2 libtheora0 libva-drm2 libva-x11-2 libva2 libvamp-hostsdk3v5 libvdpau1 libvpx5
-  libx264-152 libx265-146 libxvidcore4 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers va-driver-all vdpau-driver-all
-Suggested packages:
-  ladspa-plugin i965-va-driver-shaders libbluray-bdj firmware-crystalhd opus-tools serdi sordi speex libvdpau-va-gl1 nvidia-vdpau-driver
-  nvidia-legacy-340xx-vdpau-driver
-The following NEW packages will be installed:
-  audacity audacity-data i965-va-driver libaacs0 libavcodec57 libavformat57 libavutil55 libbdplus0 libbluray2 libchromaprint1 libcrystalhd3 libflac++6v5
-  libgme0 liblilv-0-0 libmpg123-0 libnuma1 libopenjp2-7 libopenmpt0 libopus0 libportsmf0v5 libserd-0-0 libshine3 libsnappy1v5 libsord-0-0 libsoundtouch1
-  libsoxr0 libspeex1 libsratom-0-0 libssh-gcrypt-4 libsuil-0-0 libswresample2 libtheora0 libva-drm2 libva-x11-2 libva2 libvamp-hostsdk3v5 libvdpau1 libvpx5
-  libx264-152 libx265-146 libxvidcore4 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers va-driver-all vdpau-driver-all
-0 upgraded, 47 newly installed, 0 to remove and 121 not upgraded.
-Need to get 21.9 MB of archives.
-After this operation, 138 MB of additional disk space will be used.
-Do you want to continue? [Y/n] 
-0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnuma1 amd64 2.0.11-2.1ubuntu0.1 [22.0 kB]
-0% [1 libnuma1 10.1 kB/22.0 kB 46%]                                   1% [Working]            Get:2 http://archive.ubuntu.com/ubuntu bionic/universe amd64 audacity-data all 2.2.1-1 [1,650 kB]
-1% [2 audacity-data 23.1 kB/1,650 kB 1%]2% [2 audacity-data 481 kB/1,650 kB 29%]4% [2 audacity-data 933 kB/1,650 kB 57%]6% [2 audacity-data 1,484 kB/1,650 kB 90%]                                          7% [Waiting for headers]                        Get:3 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libva2 amd64 2.1.0-3 [47.6 kB]
-7% [3 libva2 0 B/47.6 kB 0%]                            8% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libva-drm2 amd64 2.1.0-3 [6,880 B]
-8% [4 libva-drm2 5,646 B/6,880 B 82%]                                     8% [Waiting for headers]                        Get:5 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libva-x11-2 amd64 2.1.0-3 [11.5 kB]
-8% [5 libva-x11-2 10.2 kB/11.5 kB 89%]                                      8% [Waiting for headers]                        Get:6 http://archive.ubuntu.com/ubuntu bionic/main amd64 libvdpau1 amd64 1.1.1-3ubuntu1 [25.5 kB]
-9% [6 libvdpau1 6,224 B/25.5 kB 24%]                                    9% [Waiting for headers]                        Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libavutil55 amd64 7:3.4.6-0ubuntu0.18.04.1 [190 kB]
-9% [7 libavutil55 841 B/190 kB 0%]                                  10% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libcrystalhd3 amd64 1:0.0~git20110715.fdd2f19-12 [45.8 kB]
-10% [8 libcrystalhd3 516 B/45.8 kB 1%]                                      Get:9 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libopenjp2-7 amd64 2.3.0-2build0.18.04.1 [145 kB]
-11% [9 libopenjp2-7 1,245 B/145 kB 1%]                                      12% [Waiting for headers]                         Get:10 http://archive.ubuntu.com/ubuntu bionic/main amd64 libopus0 amd64 1.1.2-1ubuntu1 [159 kB]
-12% [10 libopus0 1,554 B/159 kB 1%]                                   13% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libshine3 amd64 3.1.1-1 [22.9 kB]
-13% [11 libshine3 721 B/22.9 kB 3%]                                   13% [Waiting for headers]                         Get:12 http://archive.ubuntu.com/ubuntu bionic/main amd64 libsnappy1v5 amd64 1.1.7-1 [16.0 kB]
-13% [12 libsnappy1v5 958 B/16.0 kB 6%]                                      14% [Waiting for headers]                         Get:13 http://archive.ubuntu.com/ubuntu bionic/main amd64 libspeex1 amd64 1.2~rc1.2-1ubuntu2 [52.1 kB]
-14% [13 libspeex1 253 B/52.1 kB 0%]                                   14% [Working]             Get:14 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsoxr0 amd64 0.1.2-3 [65.9 kB]
-14% [14 libsoxr0 2,511 B/65.9 kB 4%]                                    15% [Waiting for headers]                         Get:15 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libswresample2 amd64 7:3.4.6-0ubuntu0.18.04.1 [55.2 kB]
-15% [15 libswresample2 3,966 B/55.2 kB 7%]                                          16% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu bionic/main amd64 libtheora0 amd64 1.1.1+dfsg.1-14 [170 kB]
-16% [16 libtheora0 495 B/170 kB 0%]                                   17% [Waiting for headers]                         Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libvpx5 amd64 1.7.0-3ubuntu0.18.04.1 [796 kB]
-17% [17 libvpx5 7,038 B/796 kB 1%]                                  20% [Waiting for headers]                         Get:18 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libx264-152 amd64 2:0.152.2854+gite9a5903-2 [609 kB]
-20% [18 libx264-152 4,147 B/609 kB 1%]                                      23% [Working]             Get:19 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libx265-146 amd64 2.6-3 [1,026 kB]
-23% [19 libx265-146 0 B/1,026 kB 0%]                                    27% [Waiting for headers]                         Get:20 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libxvidcore4 amd64 2:1.3.5-1 [200 kB]
-27% [20 libxvidcore4 3,164 B/200 kB 2%]                                       28% [Waiting for headers]                         Get:21 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libzvbi-common all 0.2.35-13 [32.1 kB]
-28% [21 libzvbi-common 131 B/32.1 kB 0%]                                        28% [Working]             Get:22 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libzvbi0 amd64 0.2.35-13 [235 kB]
-28% [22 libzvbi0 1,524 B/235 kB 1%]                                   30% [Waiting for headers]                         Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libavcodec57 amd64 7:3.4.6-0ubuntu0.18.04.1 [4,592 kB]
-30% [23 libavcodec57 1,565 B/4,592 kB 0%]34% [23 libavcodec57 1,055 kB/4,592 kB 23%]37% [23 libavcodec57 2,113 kB/4,592 kB 46%]41% [23 libavcodec57 3,171 kB/4,592 kB 69%]45% [23 libavcodec57 4,242 kB/4,592 kB 92%]47% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:24 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libbluray2 amd64 1:1.0.2-3 [141 kB]
-47% [24 libbluray2 0 B/141 kB 0%]                                                                                                               1,685 kB/s 6s48% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:25 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libchromaprint1 amd64 1.4.3-1 [36.8 kB]
-48% [25 libchromaprint1 0 B/36.8 kB 0%]                                                                                                         1,685 kB/s 6s48% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:26 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libgme0 amd64 0.6.2-1 [121 kB]
-48% [26 libgme0 0 B/121 kB 0%]                                                                                                                  1,685 kB/s 6s49% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:27 http://archive.ubuntu.com/ubuntu bionic/main amd64 libmpg123-0 amd64 1.25.10-1 [125 kB]
-49% [27 libmpg123-0 0 B/125 kB 0%]                                                                                                              1,685 kB/s 6s50% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:28 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libopenmpt0 amd64 0.3.6-1 [561 kB]
-50% [28 libopenmpt0 0 B/561 kB 0%]                                                                                                              1,685 kB/s 6s53% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:29 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssh-gcrypt-4 amd64 0.8.0~20170825.94fa1e38-1ubuntu0.6 [172 kB]
-53% [29 libssh-gcrypt-4 0 B/172 kB 0%]                                                                                                          1,685 kB/s 6s54% [Working]                                                                                                                                   1,685 kB/s 6s                                                                                                                                                             Get:30 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 libavformat57 amd64 7:3.4.6-0ubuntu0.18.04.1 [949 kB]
-54% [30 libavformat57 0 B/949 kB 0%]                                                                                                            1,685 kB/s 6s58% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:31 http://archive.ubuntu.com/ubuntu bionic/main amd64 libflac++6v5 amd64 1.3.2-1 [27.7 kB]
-58% [31 libflac++6v5 0 B/27.7 kB 0%]                                                                                                            1,685 kB/s 5s58% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:32 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libserd-0-0 amd64 0.28.0~dfsg0-1 [37.0 kB]
-58% [32 libserd-0-0 0 B/37.0 kB 0%]                                                                                                             1,685 kB/s 5s59% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:33 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsord-0-0 amd64 0.16.0~dfsg0-1 [20.2 kB]
-59% [33 libsord-0-0 0 B/20.2 kB 0%]                                                                                                             1,685 kB/s 5s59% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:34 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsratom-0-0 amd64 0.6.0~dfsg0-1 [15.8 kB]
-59% [34 libsratom-0-0 0 B/15.8 kB 0%]                                                                                                           1,685 kB/s 5s60% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:35 http://archive.ubuntu.com/ubuntu bionic/universe amd64 liblilv-0-0 amd64 0.24.2~dfsg0-1 [38.0 kB]
-60% [35 liblilv-0-0 0 B/38.0 kB 0%]                                                                                                             1,685 kB/s 5s60% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:36 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libportsmf0v5 amd64 0.1~svn20101010-5ubuntu1 [54.5 kB]
-60% [36 libportsmf0v5 0 B/54.5 kB 0%]                                                                                                           1,685 kB/s 5s61% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:37 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsoundtouch1 amd64 1.9.2-3 [39.6 kB]
-61% [37 libsoundtouch1 0 B/39.6 kB 0%]                                                                                                          1,685 kB/s 5s61% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:38 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libsuil-0-0 amd64 0.10.0~dfsg0-1 [19.3 kB]
-61% [38 libsuil-0-0 0 B/19.3 kB 0%]                                                                                                             1,685 kB/s 5s62% [Working]                                                                                                                                   1,685 kB/s 5s                                                                                                                                                             Get:39 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libvamp-hostsdk3v5 amd64 2.7.1~repack0-1 [90.7 kB]
-62% [39 libvamp-hostsdk3v5 0 B/90.7 kB 0%]                                                                                                      1,685 kB/s 5s63% [Waiting for headers]                                                                                                                       1,685 kB/s 5s                                                                                                                                                             Get:40 http://archive.ubuntu.com/ubuntu bionic/universe amd64 audacity amd64 2.2.1-1 [3,533 kB]
-63% [40 audacity 789 B/3,533 kB 0%]                                                                                                             1,685 kB/s 5s67% [40 audacity 1,056 kB/3,533 kB 30%]                                                                                                         1,685 kB/s 4s70% [40 audacity 2,096 kB/3,533 kB 59%]                                                                                                         1,685 kB/s 4s74% [40 audacity 3,129 kB/3,533 kB 89%]                                                                                                         1,685 kB/s 3s76% [Waiting for headers]                                                                                                                       1,685 kB/s 3s                                                                                                                                                             Get:41 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libaacs0 amd64 0.9.0-1 [51.4 kB]
-76% [41 libaacs0 0 B/51.4 kB 0%]                                                                                                                1,685 kB/s 3s77% [Waiting for headers]                                                                                                                       1,685 kB/s 3s                                                                                                                                                             Get:42 http://archive.ubuntu.com/ubuntu bionic/universe amd64 libbdplus0 amd64 0.1.2-2 [46.6 kB]
-77% [42 libbdplus0 49 B/46.6 kB 0%]                                                                                                             1,685 kB/s 3s77% [Waiting for headers]                                                                                                                       1,685 kB/s 3s                                                                                                                                                             Get:43 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mesa-va-drivers amd64 19.2.8-0ubuntu0~18.04.3 [2,288 kB]
-77% [43 mesa-va-drivers 1,216 B/2,288 kB 0%]                                                                                                    1,685 kB/s 3s81% [43 mesa-va-drivers 1,015 kB/2,288 kB 44%]                                                                                                  1,685 kB/s 2s85% [43 mesa-va-drivers 2,073 kB/2,288 kB 91%]                                                                                                  1,685 kB/s 2s86% [Waiting for headers]                                                                                                                       1,685 kB/s 1s                                                                                                                                                             Get:44 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 mesa-vdpau-drivers amd64 19.2.8-0ubuntu0~18.04.3 [2,406 kB]
-86% [44 mesa-vdpau-drivers 3,791 B/2,406 kB 0%]                                                                                                 1,685 kB/s 1s90% [44 mesa-vdpau-drivers 1,007 kB/2,406 kB 42%]                                                                                               1,685 kB/s 1s94% [44 mesa-vdpau-drivers 2,063 kB/2,406 kB 86%]                                                                                               1,685 kB/s 0s95% [Waiting for headers]                                                                                                                       1,685 kB/s 0s                                                                                                                                                             Get:45 http://archive.ubuntu.com/ubuntu bionic/universe amd64 i965-va-driver amd64 2.1.0-0ubuntu1 [925 kB]
-95% [45 i965-va-driver 2,076 B/925 kB 0%]                                                                                                       1,685 kB/s 0s99% [Working]                                                                                                                                   1,685 kB/s 0s                                                                                                                                                             Get:46 http://archive.ubuntu.com/ubuntu bionic/universe amd64 va-driver-all amd64 2.1.0-3 [4,376 B]
-99% [46 va-driver-all 0 B/4,376 B 0%]                                                                                                           1,685 kB/s 0s100% [Working]                                                                                                                                  1,685 kB/s 0s                                                                                                                                                             Get:47 http://archive.ubuntu.com/ubuntu bionic/main amd64 vdpau-driver-all amd64 1.1.1-3ubuntu1 [4,674 B]
-100% [47 vdpau-driver-all 0 B/4,674 B 0%]                                                                                                       1,685 kB/s 0s100% [Working]                                                                                                                                  1,685 kB/s 0s                                                                                                                                                             Fetched 21.9 MB in 12s (1,876 kB/s)
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libnuma1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44590 files and directories currently installed.)
-Preparing to unpack .../00-libnuma1_2.0.11-2.1ubuntu0.1_amd64.deb ...
-Unpacking libnuma1:amd64 (2.0.11-2.1ubuntu0.1) ...
-Selecting previously unselected package audacity-data.
-Preparing to unpack .../01-audacity-data_2.2.1-1_all.deb ...
-Unpacking audacity-data (2.2.1-1) ...
-Selecting previously unselected package libva2:amd64.
-Preparing to unpack .../02-libva2_2.1.0-3_amd64.deb ...
-Unpacking libva2:amd64 (2.1.0-3) ...
-Selecting previously unselected package libva-drm2:amd64.
-Preparing to unpack .../03-libva-drm2_2.1.0-3_amd64.deb ...
-Unpacking libva-drm2:amd64 (2.1.0-3) ...
-Selecting previously unselected package libva-x11-2:amd64.
-Preparing to unpack .../04-libva-x11-2_2.1.0-3_amd64.deb ...
-Unpacking libva-x11-2:amd64 (2.1.0-3) ...
-Selecting previously unselected package libvdpau1:amd64.
-Preparing to unpack .../05-libvdpau1_1.1.1-3ubuntu1_amd64.deb ...
-Unpacking libvdpau1:amd64 (1.1.1-3ubuntu1) ...
-Selecting previously unselected package libavutil55:amd64.
-Preparing to unpack .../06-libavutil55_7%3a3.4.6-0ubuntu0.18.04.1_amd64.deb ...
-Unpacking libavutil55:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Selecting previously unselected package libcrystalhd3:amd64.
-Preparing to unpack .../07-libcrystalhd3_1%3a0.0~git20110715.fdd2f19-12_amd64.deb ...
-Unpacking libcrystalhd3:amd64 (1:0.0~git20110715.fdd2f19-12) ...
-Selecting previously unselected package libopenjp2-7:amd64.
-Preparing to unpack .../08-libopenjp2-7_2.3.0-2build0.18.04.1_amd64.deb ...
-Unpacking libopenjp2-7:amd64 (2.3.0-2build0.18.04.1) ...
-Selecting previously unselected package libopus0:amd64.
-Preparing to unpack .../09-libopus0_1.1.2-1ubuntu1_amd64.deb ...
-Unpacking libopus0:amd64 (1.1.2-1ubuntu1) ...
-Selecting previously unselected package libshine3:amd64.
-Preparing to unpack .../10-libshine3_3.1.1-1_amd64.deb ...
-Unpacking libshine3:amd64 (3.1.1-1) ...
-Selecting previously unselected package libsnappy1v5:amd64.
-Preparing to unpack .../11-libsnappy1v5_1.1.7-1_amd64.deb ...
-Unpacking libsnappy1v5:amd64 (1.1.7-1) ...
-Selecting previously unselected package libspeex1:amd64.
-Preparing to unpack .../12-libspeex1_1.2~rc1.2-1ubuntu2_amd64.deb ...
-Unpacking libspeex1:amd64 (1.2~rc1.2-1ubuntu2) ...
-Selecting previously unselected package libsoxr0:amd64.
-Preparing to unpack .../13-libsoxr0_0.1.2-3_amd64.deb ...
-Unpacking libsoxr0:amd64 (0.1.2-3) ...
-Selecting previously unselected package libswresample2:amd64.
-Preparing to unpack .../14-libswresample2_7%3a3.4.6-0ubuntu0.18.04.1_amd64.deb ...
-Unpacking libswresample2:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Selecting previously unselected package libtheora0:amd64.
-Preparing to unpack .../15-libtheora0_1.1.1+dfsg.1-14_amd64.deb ...
-Unpacking libtheora0:amd64 (1.1.1+dfsg.1-14) ...
-Selecting previously unselected package libvpx5:amd64.
-Preparing to unpack .../16-libvpx5_1.7.0-3ubuntu0.18.04.1_amd64.deb ...
-Unpacking libvpx5:amd64 (1.7.0-3ubuntu0.18.04.1) ...
-Selecting previously unselected package libx264-152:amd64.
-Preparing to unpack .../17-libx264-152_2%3a0.152.2854+gite9a5903-2_amd64.deb ...
-Unpacking libx264-152:amd64 (2:0.152.2854+gite9a5903-2) ...
-Selecting previously unselected package libx265-146:amd64.
-Preparing to unpack .../18-libx265-146_2.6-3_amd64.deb ...
-Unpacking libx265-146:amd64 (2.6-3) ...
-Selecting previously unselected package libxvidcore4:amd64.
-Preparing to unpack .../19-libxvidcore4_2%3a1.3.5-1_amd64.deb ...
-Unpacking libxvidcore4:amd64 (2:1.3.5-1) ...
-Selecting previously unselected package libzvbi-common.
-Preparing to unpack .../20-libzvbi-common_0.2.35-13_all.deb ...
-Unpacking libzvbi-common (0.2.35-13) ...
-Selecting previously unselected package libzvbi0:amd64.
-Preparing to unpack .../21-libzvbi0_0.2.35-13_amd64.deb ...
-Unpacking libzvbi0:amd64 (0.2.35-13) ...
-Selecting previously unselected package libavcodec57:amd64.
-Preparing to unpack .../22-libavcodec57_7%3a3.4.6-0ubuntu0.18.04.1_amd64.deb ...
-Unpacking libavcodec57:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Selecting previously unselected package libbluray2:amd64.
-Preparing to unpack .../23-libbluray2_1%3a1.0.2-3_amd64.deb ...
-Unpacking libbluray2:amd64 (1:1.0.2-3) ...
-Selecting previously unselected package libchromaprint1:amd64.
-Preparing to unpack .../24-libchromaprint1_1.4.3-1_amd64.deb ...
-Unpacking libchromaprint1:amd64 (1.4.3-1) ...
-Selecting previously unselected package libgme0:amd64.
-Preparing to unpack .../25-libgme0_0.6.2-1_amd64.deb ...
-Unpacking libgme0:amd64 (0.6.2-1) ...
-Selecting previously unselected package libmpg123-0:amd64.
-Preparing to unpack .../26-libmpg123-0_1.25.10-1_amd64.deb ...
-Unpacking libmpg123-0:amd64 (1.25.10-1) ...
-Selecting previously unselected package libopenmpt0:amd64.
-Preparing to unpack .../27-libopenmpt0_0.3.6-1_amd64.deb ...
-Unpacking libopenmpt0:amd64 (0.3.6-1) ...
-Selecting previously unselected package libssh-gcrypt-4:amd64.
-Preparing to unpack .../28-libssh-gcrypt-4_0.8.0~20170825.94fa1e38-1ubuntu0.6_amd64.deb ...
-Unpacking libssh-gcrypt-4:amd64 (0.8.0~20170825.94fa1e38-1ubuntu0.6) ...
-Selecting previously unselected package libavformat57:amd64.
-Preparing to unpack .../29-libavformat57_7%3a3.4.6-0ubuntu0.18.04.1_amd64.deb ...
-Unpacking libavformat57:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Selecting previously unselected package libflac++6v5:amd64.
-Preparing to unpack .../30-libflac++6v5_1.3.2-1_amd64.deb ...
-Unpacking libflac++6v5:amd64 (1.3.2-1) ...
-Selecting previously unselected package libserd-0-0:amd64.
-Preparing to unpack .../31-libserd-0-0_0.28.0~dfsg0-1_amd64.deb ...
-Unpacking libserd-0-0:amd64 (0.28.0~dfsg0-1) ...
-Selecting previously unselected package libsord-0-0:amd64.
-Preparing to unpack .../32-libsord-0-0_0.16.0~dfsg0-1_amd64.deb ...
-Unpacking libsord-0-0:amd64 (0.16.0~dfsg0-1) ...
-Selecting previously unselected package libsratom-0-0:amd64.
-Preparing to unpack .../33-libsratom-0-0_0.6.0~dfsg0-1_amd64.deb ...
-Unpacking libsratom-0-0:amd64 (0.6.0~dfsg0-1) ...
-Selecting previously unselected package liblilv-0-0.
-Preparing to unpack .../34-liblilv-0-0_0.24.2~dfsg0-1_amd64.deb ...
-Unpacking liblilv-0-0 (0.24.2~dfsg0-1) ...
-Selecting previously unselected package libportsmf0v5:amd64.
-Preparing to unpack .../35-libportsmf0v5_0.1~svn20101010-5ubuntu1_amd64.deb ...
-Unpacking libportsmf0v5:amd64 (0.1~svn20101010-5ubuntu1) ...
-Selecting previously unselected package libsoundtouch1:amd64.
-Preparing to unpack .../36-libsoundtouch1_1.9.2-3_amd64.deb ...
-Unpacking libsoundtouch1:amd64 (1.9.2-3) ...
-Selecting previously unselected package libsuil-0-0:amd64.
-Preparing to unpack .../37-libsuil-0-0_0.10.0~dfsg0-1_amd64.deb ...
-Unpacking libsuil-0-0:amd64 (0.10.0~dfsg0-1) ...
-Selecting previously unselected package libvamp-hostsdk3v5:amd64.
-Preparing to unpack .../38-libvamp-hostsdk3v5_2.7.1~repack0-1_amd64.deb ...
-Unpacking libvamp-hostsdk3v5:amd64 (2.7.1~repack0-1) ...
-Selecting previously unselected package audacity.
-Preparing to unpack .../39-audacity_2.2.1-1_amd64.deb ...
-Unpacking audacity (2.2.1-1) ...
-Selecting previously unselected package libaacs0:amd64.
-Preparing to unpack .../40-libaacs0_0.9.0-1_amd64.deb ...
-Unpacking libaacs0:amd64 (0.9.0-1) ...
-Selecting previously unselected package libbdplus0:amd64.
-Preparing to unpack .../41-libbdplus0_0.1.2-2_amd64.deb ...
-Unpacking libbdplus0:amd64 (0.1.2-2) ...
-Selecting previously unselected package mesa-va-drivers:amd64.
-Preparing to unpack .../42-mesa-va-drivers_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
-Unpacking mesa-va-drivers:amd64 (19.2.8-0ubuntu0~18.04.3) ...
-Selecting previously unselected package mesa-vdpau-drivers:amd64.
-Preparing to unpack .../43-mesa-vdpau-drivers_19.2.8-0ubuntu0~18.04.3_amd64.deb ...
-Unpacking mesa-vdpau-drivers:amd64 (19.2.8-0ubuntu0~18.04.3) ...
-Selecting previously unselected package i965-va-driver:amd64.
-Preparing to unpack .../44-i965-va-driver_2.1.0-0ubuntu1_amd64.deb ...
-Unpacking i965-va-driver:amd64 (2.1.0-0ubuntu1) ...
-Selecting previously unselected package va-driver-all:amd64.
-Preparing to unpack .../45-va-driver-all_2.1.0-3_amd64.deb ...
-Unpacking va-driver-all:amd64 (2.1.0-3) ...
-Selecting previously unselected package vdpau-driver-all:amd64.
-Preparing to unpack .../46-vdpau-driver-all_1.1.1-3ubuntu1_amd64.deb ...
-Unpacking vdpau-driver-all:amd64 (1.1.1-3ubuntu1) ...
-Setting up libflac++6v5:amd64 (1.3.2-1) ...
-Setting up libx264-152:amd64 (2:0.152.2854+gite9a5903-2) ...
-Setting up libopenjp2-7:amd64 (2.3.0-2build0.18.04.1) ...
-Processing triggers for mime-support (3.60ubuntu1) ...
-Setting up libaacs0:amd64 (0.9.0-1) ...
-Setting up libnuma1:amd64 (2.0.11-2.1ubuntu0.1) ...
-Setting up libsoxr0:amd64 (0.1.2-3) ...
-Setting up libssh-gcrypt-4:amd64 (0.8.0~20170825.94fa1e38-1ubuntu0.6) ...
-Setting up libsuil-0-0:amd64 (0.10.0~dfsg0-1) ...
-Setting up libbluray2:amd64 (1:1.0.2-3) ...
-Setting up libvdpau1:amd64 (1.1.1-3ubuntu1) ...
-Setting up libshine3:amd64 (3.1.1-1) ...
-Setting up libva2:amd64 (2.1.0-3) ...
-Setting up libspeex1:amd64 (1.2~rc1.2-1ubuntu2) ...
-Setting up libxvidcore4:amd64 (2:1.3.5-1) ...
-Setting up libopus0:amd64 (1.1.2-1ubuntu1) ...
-Setting up libx265-146:amd64 (2.6-3) ...
-Setting up i965-va-driver:amd64 (2.1.0-0ubuntu1) ...
-Setting up libcrystalhd3:amd64 (1:0.0~git20110715.fdd2f19-12) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-Setting up libsnappy1v5:amd64 (1.1.7-1) ...
-Setting up mesa-va-drivers:amd64 (19.2.8-0ubuntu0~18.04.3) ...
-Setting up libva-drm2:amd64 (2.1.0-3) ...
-Setting up libzvbi-common (0.2.35-13) ...
-Processing triggers for shared-mime-info (1.9-2) ...
-Setting up libvpx5:amd64 (1.7.0-3ubuntu0.18.04.1) ...
-Setting up libgme0:amd64 (0.6.2-1) ...
-Setting up libportsmf0v5:amd64 (0.1~svn20101010-5ubuntu1) ...
-Setting up libbdplus0:amd64 (0.1.2-2) ...
-Setting up libzvbi0:amd64 (0.2.35-13) ...
-Setting up libva-x11-2:amd64 (2.1.0-3) ...
-Setting up libsoundtouch1:amd64 (1.9.2-3) ...
-Setting up libserd-0-0:amd64 (0.28.0~dfsg0-1) ...
-Setting up libtheora0:amd64 (1.1.1+dfsg.1-14) ...
-Setting up libmpg123-0:amd64 (1.25.10-1) ...
-Processing triggers for hicolor-icon-theme (0.17-2) ...
-Setting up audacity-data (2.2.1-1) ...
-Setting up libvamp-hostsdk3v5:amd64 (2.7.1~repack0-1) ...
-Setting up libavutil55:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Setting up libopenmpt0:amd64 (0.3.6-1) ...
-Setting up mesa-vdpau-drivers:amd64 (19.2.8-0ubuntu0~18.04.3) ...
-Setting up libsord-0-0:amd64 (0.16.0~dfsg0-1) ...
-Setting up libswresample2:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Setting up va-driver-all:amd64 (2.1.0-3) ...
-Setting up vdpau-driver-all:amd64 (1.1.1-3ubuntu1) ...
-Setting up libsratom-0-0:amd64 (0.6.0~dfsg0-1) ...
-Setting up liblilv-0-0 (0.24.2~dfsg0-1) ...
-Setting up libavcodec57:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Setting up libchromaprint1:amd64 (1.4.3-1) ...
-Setting up libavformat57:amd64 (7:3.4.6-0ubuntu0.18.04.1) ...
-Setting up audacity (2.2.1-1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-root@3439bccc6897:~/src# audacity 
-10:24:00: Error: Unable to initialize GTK+, is DISPLAY set properly?
-root@3439bccc6897:~/src# cd ../audio/
-root@3439bccc6897:~/audio# cd ../audio/[3Paudacity sudo apt-get install audacity[10Pupdate[11Paudacity[2Pcd src[3@mkdir[C[C[C[Cls[Kcd ../sox interference01.wav interference01_phaser.wav phaser 0.6 0.66 3.0 0.6 2.0 -t [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-root@3439bccc6897:~/audio# C[Kls
-blue_whale_ship.mp3			      interference01_phaser-old1.wav  Orca_Sonar.aup	  RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
-core					      interference01_phaser.wav       Orca_Sonar_data	  RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
-etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav  interference01.wav	      Orca_Sonar.mp3	  Sonar.wav
-etpb3_10xc-BlueWhaleSouthPacific-10x.wav      killer-whale.mp3		      pfahlgruendung.mp3
-root@3439bccc6897:~/audio# [5P(reverse-i-search)`':[Cs': lsy': sox -n interference01.wav synth 275 pinknoise[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Croot@3439bccc6897:~/audio#[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K30 square[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@d[1@i[1@s[1@p[1@e[1@r[1@s[1@i[1@o[1@n
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01.wav [1@_[1@c[1@h[1@o[1@r[1@u[1@s[C[C[C[C[C c h o r u s [C 2 [1P 1 [C [K[1P 0 . 7 [C 0 . 9 [C 1 0 0 0 [C 0 . 4 [C 0 . 2 5 [C 2 [C - s 
-sox FAIL chorus: chorus: delay must be less than 100.0 msec!
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 1000 0.4 0.25 2 -s [1P
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 100 0.4 0.25 2 -s [C[1P[1P
-sox FAIL chorus: chorus: delay must be more than 20.0 msec!
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 1 0.4 0.25 2 -s [1P[1@5[1@5
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 55 0.4 0.25 2 -s [K[Kt
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 55 0.4 0.25 2 -t[1P[1P[1@2[1@0
-root@3439bccc6897:~/audio# ls -l
-total 152420
--rw-r--r-- 1 jovyan 1001   270965 May 20 11:29 blue_whale_ship.mp3
--rw------- 1 root   root  2617344 Jul  8 09:57 core
--rw-r--r-- 1 root   root  5764304 Jul  8 13:12 dispersion01_chorus.wav
--rw-r--r-- 1 root   root  5760080 Jul  8 13:06 dispersion01.wav
--rw-r--r-- 1 jovyan 1001  2006870 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav
--rw-r--r-- 1 jovyan 1001   364094 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x.wav
--rw-r--r-- 1 root   root 52800080 Jul  8 10:29 interference01_phaser-old1.wav
--rw-r--r-- 1 jovyan 1001 26400044 Jul  8 11:42 interference01_phaser.wav
--rw-r--r-- 1 root   root 52800080 Jul  8 09:38 interference01.wav
--rwxr-x--- 1 jovyan 1001   800064 May 20 11:30 killer-whale.mp3
--rw------- 1 jovyan 1001     8037 May 20 14:01 Orca_Sonar.aup
-drwxrwxr-x 3 jovyan 1001     4096 May 20 14:01 Orca_Sonar_data
--rw-r--r-- 1 jovyan 1001   638416 May 20 15:01 Orca_Sonar.mp3
--rwxr-xr-x 1 jovyan 1001   398086 May 11 15:36 pfahlgruendung.mp3
--rw-r--r-- 1 jovyan 1001  4743528 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
--rw-r--r-- 1 jovyan 1001   860540 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
--rwxr-x--- 1 jovyan 1001   121056 May 20 11:30 Sonar.wav
-root@3439bccc6897:~/audio# ls -lsox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 20 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks[1P[1@9[C[C[C[C[C[1P[1P[1P[1P[1@2[1@0
-sox FAIL chorus: chorus: speed must be less than 5.0 Hz!
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 20 0.9 20 2 -s[C[1P -s0 -s. -s1 -s
-sox FAIL chorus: chorus: speed must be less than 5.0 Hz!
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 20 0.9 20 0.1 -s[C[C[C[C[1P -s[1P -s[1P -s2 -s[1P[1P[1@0[1@.[1@1
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus clipped 772120 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 20 0.9 0.1 2 -s[C[1P[1@7
-sox WARN chorus: chorus clipped 772120 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.7 20 0.9 0.1 2 -s[1P[1@5
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.5 0.7 20 0.9 0.1 2 -s[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kreverb
-sox WARN reverb: reverb clipped 2183459 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav reverbgreverbareverbireverbnreverb reverb0reverb.reverb7reverb reverb|reverb reverb[Creverbereverbvreverbereverb[Creverbbreverb reverb[1Preverb[1Preverb[1Peverb[1Preverb[1Preverb[1Preverb[1Peverb
-bash: reverb: command not found
-sox WARN gain: gain clipped 1440000 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain 0.7 | reverb[1Preverb[1Preverb
-sox WARN gain: gain clipped 1440000 samples; decrease volume?
-sox WARN reverb: reverb clipped 2183459 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain 0.7 reverb[1P reverb5 reverb
-sox WARN gain: gain clipped 1440000 samples; decrease volume?
-sox WARN reverb: reverb clipped 2183459 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain 0.5 reverb[1P reverb[1P reverb[1P reverb- reverb1 reverb2 reverb[1P reverb[1P reverb6 reverb
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -6 reverb[1@0.5[C[C[C[C[C[C[C[1P-6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksox dispersion01.wav dispersion01_chorus.wav gain -6 reverb[1@0.5[C[C[C[C[C[C[C[1P-6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[5P(reverse-i-search)`':[Cs': sox dispersion01.wav dispersion01_chorus.wav gain -6 reverb[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pq': sox -n dispersion01.wav synth 30 square[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Proot@3439bccc6897:~/audio#[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
-root@3439bccc6897:~/audio# [5P(reverse-i-search)`':[Cs': sox dispersion01.wav dispersion01_chorus.wav gain -6 reverb[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pq': sox -n dispersion01.wav synth 30 square[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Proot@3439bccc6897:~/audio#[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 0.5
-root@3439bccc6897:~/audio# sox -n dispersion01.wav synth 30 square 0.5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdispersion01.wav dispersion01_chorus.wav gain -6 reverb[1@0.5[C[C[C[C[C[C[C7[C[C[C[C[C[C[C| reverb[11Preverbchorus 0.5 0.7 20 0.9 0.1 2 -s7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@20 0.1[C[C[C[2P2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l[Ksox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 20 0.4 0.25 2 -t55[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs [1P1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@00[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[40P-n dispersion01.wav synth 30 square[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 1000 0.4 0.25 2 -s [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 100 0.4 0.25 2 -s [1P[1P[1P[1@5[1@5
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 55 0.4 0.25 2 -s [C[C[C[C[C[C[C[1@r[1@e[1@v[1@e[1@r[1@b[1@ 
-sox WARN reverb: reverb clipped 2690701 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav reverb chorus 0.7 0.9 55 0.4 0.25 2 -s [1@g[1@a[1@i[1@n[1@ [1@-[1@6[1@ 
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -6 reverb chorus 0.7 0.9 55 0.4 0.25 2 -s [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -6 reverb chorus 0.7 0.9 55 0.4 0.25 2 -s [C[1P t [C 6 0 [C 0 . 3 2 [C 0 . 4 [C 1 . 3 [C - s [1P t [C 4 0 [C 0 . 3 [C 0 . 3 [C 1 . 3 [C - s 
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus clipped 1662510 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -6 reverb chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [1P[1@1[1P[1@8
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus clipped 1215544 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -8 reverb chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [C[1P[1@1[1@2
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [C[1P[1P[1@2[1@4
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -24 reverb chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [1P[1P[1@8
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus clipped 1215544 samples; decrease volume?
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -8 reverb chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [1P[1@1[1@2
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-sox WARN chorus: chorus: warning >>> gain-out can cause saturation or clipping of output <<<
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1P[1P[1@1[1@0[1@0
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s [1P8[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@24[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C12[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P8[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K chorus 0.7 0.9 55 0.4 0.25 2 -s [8P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@100[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35P-n dispersion01.wav synth 30 square 0.5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdispersion01.wav dispersion01_chorus.wav gain -6 reverb[1@0.5[C[C[C[C[C[C[C7[C[C[C[C[C[C[C| reverb[11Preverbchorus 0.5 0.7 20 0.9 0.1 2 -s7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@20 0.1[C[C[C[2P2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l[Ksox dispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 20 0.4 0.25 2 -t55[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs [1P1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@00[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[40P-n dispersion01.wav synth 30 square[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksox -n dispersion01.wav synth 30 square[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 1000 0.4 0.25 2 -s ^C
-root@3439bccc6897:~/audio# [5P(reverse-i-search)`':[Cs': sox dispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[49Pq': sox -n dispersion01.wav synth 30 square 0.5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Proot@3439bccc6897:~/audio#[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdispersion01.wav dispersion01_chorus.wav chorus 0.7 0.9 100 0.4 0.25 2 -s [1P55[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7@reverb [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8@gain -6 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K chorus 0.7 0.9 55 0.4 0.25 2 -t 60 0.32 0.4 1.3 -t 40 0.3 0.3 1.3 -s ^C
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t
-root@3439bccc6897:~/audio# 
-root@3439bccc6897:~/audio# 
-root@3439bccc6897:~/audio# 
-root@3439bccc6897:~/audio# [Kroot@3439bccc6897:~/audio# sox --plot octave audio/pfahlgruendung.mp3 test.mp3  lowpass -1 1k> lowpass.plt[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@-[1@n
-root@3439bccc6897:~/audio# sox --plot octave -n test.mp3  lowpass -1 1k> lowpass.plt
-root@3439bccc6897:~/audio# sox --plot octave -n test.mp3  lowpass -1 1k> lowpass.plt[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
-sox FAIL sox: Not enough input filenames specified
-
-root@3439bccc6897:~/audio# sox --plot octave -n lowpass -1 1k> lowpass.plt[1@-[1@p[1@ 
-root@3439bccc6897:~/audio# sox --plot octave -n -p lowpass -1 1k> lowpass.plt[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10@test.mp3  [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@.[1@5
-root@3439bccc6897:~/audio# sox PileDriving_15km_simulated.wav PileDriving_15km_simulated_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t
-root@3439bccc6897:~/audio# sox --plot octave -n test.mp3  lowpass -1 1.5k[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@P[1@i[10@leDriving_[1@1[1@5[12@km_simulated[1@_[10@chorus.wav[C[1@ [1@P[1@i[10@leDriving_[1@1[1@5[12@km_simulated[1@.[1@w[1@a[1@v[1P[1P[2@av[1P[1P[1P[1P[1P[1P[1P[3@ted
-PileDriving_15km_simulated_chorus.wav  PileDriving_15km_simulated.wav         
-root@3439bccc6897:~/audio# sox PileDriving_15km_simulated_chorus.wav PileDriving_15km_simulated test.mp3  lowpass -1 1.5k.wav PileDriving_15km_simulated_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t^C
-root@3439bccc6897:~/audio# mv PileDriving_si[K[K15km_simulated.wav PileDriving_15km_simulated_^C
-root@3439bccc6897:~/audio# ls -ltr
-total 102316
--rwxr-xr-x 1 jovyan 1001   398086 May 11 15:36 pfahlgruendung.mp3
--rw-r--r-- 1 jovyan 1001   860540 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
--rw-r--r-- 1 jovyan 1001  4743528 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
--rw-r--r-- 1 jovyan 1001   270965 May 20 11:29 blue_whale_ship.mp3
--rw-r--r-- 1 jovyan 1001   364094 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x.wav
--rw-r--r-- 1 jovyan 1001  2006870 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav
--rwxr-x--- 1 jovyan 1001   121056 May 20 11:30 Sonar.wav
--rwxr-x--- 1 jovyan 1001   800064 May 20 11:30 killer-whale.mp3
--rw------- 1 jovyan 1001     8037 May 20 14:01 Orca_Sonar.aup
-drwxrwxr-x 3 jovyan 1001     4096 May 20 14:01 Orca_Sonar_data
--rw-r--r-- 1 jovyan 1001   638416 May 20 15:01 Orca_Sonar.mp3
--rw-r--r-- 1 root   root 52800080 Jul  8 09:38 interference01.wav
--rw------- 1 root   root  2617344 Jul  8 09:57 core
--rw-r--r-- 1 jovyan 1001 26400044 Jul  8 11:42 interference01_phaser.wav
--rw-r--r-- 1 root   root  5760080 Jul  8 13:20 dispersion01.wav
--rw-r--r-- 1 root   root  5779664 Jul  8 14:47 dispersion01_chorus.wav
--rwxr-xr-x 1 jovyan 1001   343742 Jul  8 14:48 PileDriving_14-16km_keinBlasenschleierMedien1.wav
--rwxr-xr-x 1 jovyan 1001   373822 Jul  8 14:48 PileDriving_2-4km_keinBlasenschleierMedien1.wav
--rw-r--r-- 1 root   root      499 Jul  8 15:11 lowpass.plt
--rw-r--r-- 1 jovyan 1001   371094 Jul  8 15:30 PileDriving_15km_simulated.wav
--rw-r--r-- 1 root   root   379254 Jul  8 15:32 PileDriving_15km_simulated_chorus.wav
-root@3439bccc6897:~/audio# ls -ltr[Kmv PileDriving_15km_simulated.wav PileDriving_15km_simulated_interference.wav
-root@3439bccc6897:~/audio# sox --plot octave -n test.mp3  lowpass -1 1.5k[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[1P[1P[1@P[1@i[10@leDriving_[1@s[1@i[1P[1P[1@1[1@5[13@km_simulated_[1@c[1@h[1@o[7@rus.wav[C[1@ [1@P[1@i[10@leDriving_[1@1[1@5[13@km_simulated_[1P[1@.[1@w[1@a[1@v[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
-root@3439bccc6897:~/audio# sox PileDriving_15km_simulated_chorus.wav PileDriving_15km_simulated.wav lowpass -1 1.5k[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pmv PileDriving_15km_simulated.wav PileDriving_15km_simulated_interference.wav[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -ltr[Ksox PileDriving_15km_simulated.wav PileDriving_15km_simulated_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[62P--plot octave -n test.mp3  lowpass -1 1.5k> lowpass.plt[9P-p lowpass -1 1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10@test.mp3  [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[36P--plot octave -n test.mp3  lowpass -1 1k> lowpass.plt[10P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-p [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9@test.mp3  lowpass -1 1.5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CPileDriving_15km_simulated.wav PileDriving_15km_simulated_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -ltr[Ksox PileDriving_15km_simulated.wav PileDriving_15km_simulated_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[62P--plot octave -n test.mp3  lowpass -1 1.5k> lowpass.plt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CPileDriving_15km_simulated.wav PileDriving_15km_simulated_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -ltr[K^C
-root@3439bccc6897:~/audio# sox dispersion01.wav dispersion01_chorus.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[53@audio/PileDriving_2-4km_keinBlasenschleierMedien1.wav[C[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C lowpass -1 1.5k[C[C[1@P[1@i[1@l[9@eDriving_[1@1[1@5km_simulatedgain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t lowpaass -1 1.5k[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t lowp[1@a[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwavgain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t l[3@owp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t [1@l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-
-root@3439bccc6897:~/audio# ls -ltr
-total 102688
--rwxr-xr-x 1 jovyan 1001   398086 May 11 15:36 pfahlgruendung.mp3
--rw-r--r-- 1 jovyan 1001   860540 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x.wav
--rw-r--r-- 1 jovyan 1001  4743528 May 20 11:29 RHB_arrival_h07_00N_110w_jd31913-RonBrown-10x_r44.wav
--rw-r--r-- 1 jovyan 1001   270965 May 20 11:29 blue_whale_ship.mp3
--rw-r--r-- 1 jovyan 1001   364094 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x.wav
--rw-r--r-- 1 jovyan 1001  2006870 May 20 11:29 etpb3_10xc-BlueWhaleSouthPacific-10x_r44.wav
--rwxr-x--- 1 jovyan 1001   121056 May 20 11:30 Sonar.wav
--rwxr-x--- 1 jovyan 1001   800064 May 20 11:30 killer-whale.mp3
--rw------- 1 jovyan 1001     8037 May 20 14:01 Orca_Sonar.aup
-drwxrwxr-x 3 jovyan 1001     4096 May 20 14:01 Orca_Sonar_data
--rw-r--r-- 1 jovyan 1001   638416 May 20 15:01 Orca_Sonar.mp3
--rw-r--r-- 1 root   root 52800080 Jul  8 09:38 interference01.wav
--rw------- 1 root   root  2617344 Jul  8 09:57 core
--rw-r--r-- 1 jovyan 1001 26400044 Jul  8 11:42 interference01_phaser.wav
--rw-r--r-- 1 root   root  5760080 Jul  8 13:20 dispersion01.wav
--rw-r--r-- 1 root   root  5779664 Jul  8 14:47 dispersion01_chorus.wav
--rwxr-xr-x 1 jovyan 1001   343742 Jul  8 14:48 PileDriving_14-16km_keinBlasenschleierMedien1.wav
--rwxr-xr-x 1 jovyan 1001   373822 Jul  8 14:48 PileDriving_2-4km_keinBlasenschleierMedien1.wav
--rw-r--r-- 1 root   root      499 Jul  8 15:11 lowpass.plt
--rw-r--r-- 1 jovyan 1001   371094 Jul  8 15:30 PileDriving_15km_simulated_interference.wav
--rw-r--r-- 1 root   root   379254 Jul  8 15:32 PileDriving_15km_simulated_chorus.wav
--rw-r--r-- 1 root   root   379254 Jul  8 15:39 PileDriving_15km_simulated.wav
-root@3439bccc6897:~/audio# stat PileDriving_15km_simulated.wav
-  File: PileDriving_15km_simulated.wav
-  Size: 379254    	Blocks: 744        IO Block: 4096   regular file
-Device: 801h/2049d	Inode: 1455969     Links: 1
-Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
-Access: 2020-07-08 15:35:47.006418719 +0000
-Modify: 2020-07-08 15:39:40.526418719 +0000
-Change: 2020-07-08 15:39:40.526418719 +0000
- Birth: -
-root@3439bccc6897:~/audio# stat PileDriving_15km_simulated.wav[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -ltr[Ksox PileDriving_2-4km_keinBlasenschleierMedien1.wav PileDriving_15km_simulated.wav gain -12 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t  lowpass -1 1.5k[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C reverb chorus 0.7 0.9 100 0.4 0.25 2 -t l[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C reverb chorus 0.7 0.9 100 0.4 0.25 2 -t lo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t l[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-
-root@3439bccc6897:~/audio# sox PileDriving_2-4km_keinBlasenschleierMedien1.wav PileDriving_15km_simulated.wav gain -6 reverb chorus 0.7 0.9 100 0.4 0.25 2 -t llowpass -1 1.5k[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 0.9 100 0.4 0.25 2 -t lo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5 0.9 100 0.4 0.25 2 -t l[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 0.4 0.25 2 -t lo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 0.4 0.25 2 -t low[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C50 0.4 0.25 2 -t lo[1@w[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6l[1@o[1@0[1@ [1@0[1@.[1@3[1@2[1@ [1@0[1@.[1@4[1@ [1@2[1@.[1@3[1@ [1@-[1@t[1@ [1@4[1@0[1@ [1@0[1@.[1@3[1@ [1@0[1@.[1@3[1@ [1@1[1@.[1@3[1@ [1@-[1@s[1@ 
-root@3439bccc6897:~/audio# sox PileDriving_2-4km_keinBlasenschleierMedien1.wav PileDriving_15km_simulated.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 -t 600 0.32 0.4 2.3 -t 40 0.3 0.3 1.3 -s lowpass -1 1.5k[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 -t 6[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 -t [1@6[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 -t[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 -[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 [1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 [1@2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-
-root@3439bccc6897:~/audio# sox PileDriving_2-4km_keinBlasenschleierMedien1.wav PileDriving_15km_simulated_reverb.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25  2 -t 60 0.32 0.4 2.3 -t 40 0.3 0.3 1.3 -s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.wav gain -6 reverb chorus 0.5 0.9 50 0.4 0.25 2 -t 60 0.32 0.4 2.3 -t 40 0.3 0.3 1.3 -s lowpass -1 1.5k[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clow[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowp[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowpa[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowpas[C[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowpass[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowpass [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowpass -[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clowpass -1[1P 1.5k[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
