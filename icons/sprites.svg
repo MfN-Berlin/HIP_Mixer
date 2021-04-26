@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+
+  <!-- Menu -->
+  <symbol id="Icon--menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <g>
+      <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  
+	       s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  
+	       S29.104,22,28,22z"/>
+    </g>
+  </symbol>
+
+  <!-- Question mark -->
+  <symbol
+      id="Icon--question" xmlns="http://www.w3.org/2000/svg" height="20" width="20" version="1.0">
+    <path id="path2382" d="m165.33 113.44a103.61 103.61 0 1 1 -207.22 0 103.61 103.61 0 1 1 207.22 0z" transform="matrix(.93739 0 0 .93739 42.143 -6.3392)" stroke-width="0" fill="#fff"/>
+    <g id="layer1">
+      <path id="path2413" d="m100 0c-55.2 0-100 44.8-100 100-5.0495e-15 55.2 44.8 100 100 100s100-44.8 100-100-44.8-100-100-100zm0 12.812c48.13 0 87.19 39.058 87.19 87.188s-39.06 87.19-87.19 87.19-87.188-39.06-87.188-87.19 39.058-87.188 87.188-87.188zm1.47 21.25c-5.45 0.03-10.653 0.737-15.282 2.063-4.699 1.346-9.126 3.484-12.876 6.219-3.238 2.362-6.333 5.391-8.687 8.531-4.159 5.549-6.461 11.651-7.063 18.687-0.04 0.468-0.07 0.868-0.062 0.876 0.016 0.016 21.702 2.687 21.812 2.687 0.053 0 0.113-0.234 0.282-0.937 1.941-8.085 5.486-13.521 10.968-16.813 4.32-2.594 9.808-3.612 15.778-2.969 2.74 0.295 5.21 0.96 7.38 2 2.71 1.301 5.18 3.361 6.94 5.813 1.54 2.156 2.46 4.584 2.75 7.312 0.08 0.759 0.05 2.48-0.03 3.219-0.23 1.826-0.7 3.378-1.5 4.969-0.81 1.597-1.48 2.514-2.76 3.812-2.03 2.077-5.18 4.829-10.78 9.407-3.6 2.944-6.04 5.156-8.12 7.343-4.943 5.179-7.191 9.069-8.564 14.719-0.905 3.72-1.256 7.55-1.156 13.19 0.025 1.4 0.062 2.73 0.062 2.97v0.43h21.598l0.03-2.4c0.03-3.27 0.21-5.37 0.56-7.41 0.57-3.27 1.43-5 3.94-7.81 1.6-1.8 3.7-3.76 6.93-6.47 4.77-3.991 8.11-6.99 11.26-10.125 4.91-4.907 7.46-8.26 9.28-12.187 1.43-3.092 2.22-6.166 2.46-9.532 0.06-0.816 0.07-3.03 0-3.968-0.45-7.043-3.1-13.253-8.15-19.032-0.8-0.909-2.78-2.887-3.72-3.718-4.96-4.394-10.69-7.353-17.56-9.094-4.19-1.062-8.23-1.6-13.35-1.75-0.78-0.023-1.59-0.036-2.37-0.032zm-10.908 103.6v22h21.998v-22h-21.998z"/>
+    </g>
+  </symbol>
+  
+  <!-- Close -->
+  <symbol
+      width="22.86124"
+      height="22.83745"
+      id="Icon--close">
+    <g>
+      <rect
+	  style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:0.26458332;stroke-opacity:1"
+	  id="rect815"
+	  width="22.734121"
+	  height="1.9139613"
+	  x="2.0306416"
+	  y="-0.94113922"
+	  transform="rotate(45)" />
+      <rect
+	  transform="rotate(135)"
+	  y="-14.354684"
+	  x="-11.351221"
+	  height="1.9139613"
+	  width="22.734121"
+	  id="rect4522"
+	  style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:0.26458332;stroke-opacity:1" />
+    </g>
+  </symbol>
+
+  <!-- Spectrogram -->
+  <symbol
+      width="22.86124"
+      height="22.83745"
+      id="Icon--spectro">
+    <g>
+      <path fill="#333333" d="M11 9h2v2h-2zm-2 2h2v2H9zm4 0h2v2h-2zm2-2h2v2h-2zM7 9h2v2H7zm12-6H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 18H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm2-7h-2v2h2v2h-2v-2h-2v2h-2v-2h-2v2H9v-2H7v2H5v-2h2v-2H5V5h14v6z">
+      </path>
+    </g>
+  </symbol>
+  
+  <!-- Waveform -->
+  <symbol
+      width="22.86124"
+      height="22.83745"
+      id="Icon--wave">
+    <g>
+      <path d="M7 18h2V6H7v12zm4 4h2V2h-2v20zm-8-8h2v-4H3v4zm12 4h2V6h-2v12zm4-8v4h2v-4h-2z"></path>
+    </g>
+  </symbol>
+  
+  <!-- Play Button -->
+  <symbol id="Icon--play" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	  viewBox="0 0 1024 721" xml:space="preserve">
+    <path id="Triangle" fill="#000000" d="M407,493l276-143L407,206V493z"/>
+    <g id="Lozenge">
+      <g>
+	<path fill="#7da30b" d="M1013,156.3c0,0-10-70.4-40.6-101.4C933.6,14.2,890,14,870.1,11.6C727.1,1.3,512.7,1.3,512.7,1.3
+				h-0.4c0,0-214.4,0-357.4,10.3C135,14,91.4,14.2,52.6,54.9C22,85.9,12,156.3,12,156.3S1.8,238.9,1.8,321.6v77.5
+				C1.8,481.8,12,564.4,12,564.4s10,70.4,40.6,101.4c38.9,40.7,89.9,39.4,112.6,43.7c81.7,7.8,347.3,10.3,347.3,10.3
+				s214.6-0.3,357.6-10.7c20-2.4,63.5-2.6,102.3-43.3c30.6-31,40.6-101.4,40.6-101.4s10.2-82.7,10.2-165.3v-77.5
+				C1023.2,238.9,1013,156.3,1013,156.3z M407,493V206l276,144L407,493z"/>
+      </g>
+    </g>
+  </symbol>
+  
+  <!-- Mini Play Button -->
+  <symbol id="Icon--miniplay" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	  viewBox="0 0 1024 721" xml:space="preserve">
+    <path id="Triangle" fill="#000000" d="M407,493l276-143L407,206V493z"/>
+    <g id="Lozenge">
+      <g>
+	<path fill="#ffffff" d="M1013,156.3c0,0-10-70.4-40.6-101.4C933.6,14.2,890,14,870.1,11.6C727.1,1.3,512.7,1.3,512.7,1.3
+				h-0.4c0,0-214.4,0-357.4,10.3C135,14,91.4,14.2,52.6,54.9C22,85.9,12,156.3,12,156.3S1.8,238.9,1.8,321.6v77.5
+				C1.8,481.8,12,564.4,12,564.4s10,70.4,40.6,101.4c38.9,40.7,89.9,39.4,112.6,43.7c81.7,7.8,347.3,10.3,347.3,10.3
+				s214.6-0.3,357.6-10.7c20-2.4,63.5-2.6,102.3-43.3c30.6-31,40.6-101.4,40.6-101.4s10.2-82.7,10.2-165.3v-77.5
+				C1023.2,238.9,1013,156.3,1013,156.3z M407,493V206l276,144L407,493z"/>
+      </g>
+    </g>
+  </symbol>  
+
+  <!-- Pause Button -->
+  <symbol id="Icon--pause" xmlns="http://www.w3.org/2000/svg"
+	  x="0px"
+	  y="0px"
+	  viewBox="0 0 1024 721"
+	  enable-background="new 0 0 1024 721"
+	  xml:space="preserve">
+    <g
+	id="Lozenge">
+      <path
+	  style="fill:#7da30b"
+	  id="path3765"
+	  d="m 1013,156.3 c 0,0 -10,-70.4 -40.6,-101.4 C 933.6,14.2 890,14 870.1,11.6 727.1,1.3 512.7,1.3 512.7,1.3 h -0.4 c 0,0 -214.4,0 -357.4,10.3 C 135,14 91.4,14.2 52.6,54.9 22,85.9 12,156.3 12,156.3 c 0,0 -10.2,82.6 -10.2,165.3 v 77.5 c 0,82.7 10.2,165.3 10.2,165.3 0,0 10,70.4 40.6,101.4 38.9,40.7 89.9,39.4 112.6,43.7 81.7,7.8 347.3,10.3 347.3,10.3 0,0 214.6,-0.3 357.6,-10.7 20,-2.4 63.5,-2.6 102.3,-43.3 30.6,-31 40.6,-101.4 40.6,-101.4 0,0 10.2,-82.7 10.2,-165.3 v -77.5 c 0,-82.7 -10.2,-165.3 -10.2,-165.3 z" />
+      <path fill="#000000"
+	    d="m 400.11542,220.06105 c 27.74103,0 55.48205,0 83.22308,0 0,90.95857 0,181.91713 0,272.8757 -27.74103,0 -55.48205,0 -83.22308,0 0,-90.95857 0,-181.91713 0,-272.8757 z"
+	    id="rect3799"/>
+      <path id="path4883" fill="#000000"
+	    d="m 516.11542,220.06105 c 27.74103,0 55.48205,0 83.22308,0 0,90.95857 0,181.91713 0,272.8757 -27.74103,0 -55.48205,0 -83.22308,0 0,-90.95857 0,-181.91713 0,-272.8757 z" />
+    </g>
+  </symbol>
+  
+  <!-- Miniplayer Play-Pause Button -->
+  <symbol>
+  <g
+     id="Icon--playpause">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#f8f8f8;stroke-width:0.26458332;stroke-opacity:1"
+       id="rect912"
+       width="43.467262"
+       height="26.080357"
+       x="1.1717243"
+       y="1.2714295"
+       ry="7.1815476" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       inkscape:transform-center-x="-2.1733628"
+       d="m 22.149403,14.311603 -13.0401796,7.528751 0,-15.0575024 z"
+       id="path914" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       id="rect916"
+       width="3.4017856"
+       height="12.095239"
+       x="28.480495"
+       y="8.2639866" />
+    <rect
+       y="8.2639866"
+       x="35.756538"
+       height="12.095239"
+       width="3.4017856"
+       id="rect918"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
+  </g>
+  </symbol>
+
+  <!--Wrong-->
+  <symbol id="Icon--wrong" xmlns="http://www.w3.org/2000/svg"
+	  viewBox="0 0 30 30"
+	  >
+    <g transform="translate(-87.737006,-107.56698)">
+      <circle
+	  r="12.561667"
+	  cy="120.60211"
+	  cx="100.76061"
+	  id="path815"
+	  style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
+      <rect
+	  transform="rotate(-45.187468)"
+	  y="149.53134"
+	  x="-16.546648"
+	  height="13.898015"
+	  width="4.0090427"
+	  id="rect817"
+	  style="fill:#f70000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
+      <rect
+	  style="fill:#ff0505;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+	  id="rect819"
+	  width="4.0090427"
+	  height="13.898015"
+	  x="154.47581"
+	  y="7.5931244"
+	  transform="rotate(44.812532)" />
+    </g>
+  </symbol>
+
+  <!--Correct-->
+  <symbol id="Icon--correct" xmlns="http://www.w3.org/2000/svg"
+	  viewBox="0 0 30 30"
+	  >
+    <g>
+      <circle
+	  r="12.561667"
+	  cy="13.002535"
+	  cx="12.881939"
+	  id="path815"
+	  style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
+      <g
+	  id="g4526"
+	  transform="translate(-91.235733,-107.5998)"
+	  style="fill:#7da30b;fill-opacity:1">
+	<rect
+            style="fill:#7da30b;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+            id="rect817"
+            width="4.0096588"
+            height="9.462513"
+            x="-17.762238"
+            y="152.77635"
+            transform="rotate(-45.187468)" />
+	<rect
+            transform="rotate(44.812532)"
+            y="3.8636138"
+            x="158.22981"
+            height="13.898015"
+            width="4.0090427"
+            id="rect819"
+            style="fill:#7da30b;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
+      </g>
+    </g>
+  </symbol>
+  
+</svg>

@@ -1,0 +1,19 @@
+Airgun/ Erkundung zu Öl und Gasvorkommen
+* Erkundungen zu Öl- und Gasvorkommen {804,132}
+* Airguns aus 2400 km Entfernung {940,136}
+
+Schifflärm
+* Personenfähre aus 50 m. Entfernung {142,186}
+* Personenfähre aus 300 m. Entfernung {73,186}
+* Schnellboot aus 100 m. Entfernung {121,132}
+* Kreuzfahrtschiff Adventure of the Seas (Manöver) aus 100 m. Entfernung {143,240}
+* Kreuzfahrtschiff Discovery UK aus 1.5 km Entfernung {48,240}
+* US icebreaking ship Polar Star 3km away {22,294}
+
+Pfahlgründung
+* Pfahlgründung, kein Blasenschleier, 2-4 km {846,240}
+* Pfahlgründung, Blasenschleier, 2-4 km {792,272}
+* Pfahlgründung, kein Blasenschleier, 14-16 km {949,240}
+* Pfahlgründung, Blasenschleier, 14-16 km {908,281}
+
+

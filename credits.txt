@@ -1,0 +1,83 @@
+
+Konzept
+    Mirjam Müller (Umweltbundesamt), Alvaro Ortiz Troncoso (Museum für Naturkunde Berlin), Michaël Beaulieu (Deutsches Meeresmuseum)
+Programmierung
+    Alvaro Ortiz Troncoso (Museum für Naturkunde Berlin)
+Audiobearbeitung
+    Tina Birnbach (Museum für Naturkunde Berlin), Alvaro Ortiz Troncoso (Museum für Naturkunde Berlin)
+Texte
+    Cora Albrecht (Museum für Naturkunde Berlin), Tina Birnbach (Museum für Naturkunde Berlin)
+Wissenschaftliche Beratung
+    Michael Dähne (Deutsches Meeresmuseum), Ulrike Buschewski (Deutsches Meeresmuseum) 
+
+Tierstimmen
+
+Mensch
+    Aufnahme: Ilse Van Opzeeland (AWI), CC-BY-SA 4.0
+    Bild: Steve Clabuesch (NSF/USAP), Gemeinfrei
+Blauwal
+    Aufnahme: NOAA, Gemeinfrei
+    Bild: NOAA, CC BY 2.0
+Finnwal
+    Aufnahme: Sophie van Parijs / NOAA, CC BY-SA 4.0
+    Bild: Aqqa Rosing-Asvid - Visit Greenland, CC BY 2.0
+Pottwal
+    Aufnahme: Dr. Shannon Rankin, NOAA/Southwest Fisheries Science Center, CC BY-SA 4.0
+    Bild: Gabriel Barathieu, CC BY SA 2.0
+Nordkaper
+    Aufnahme: Sophie van Parijs (NOAA), CC-BY-SA 4.0
+    Bild: Ecohotel, CC BY-SA 3.0
+Buckelwal
+    Aufnahme: Helen Rößler (DMM), CC BY-SA 4.0
+    Bild: NOAA, Gemeinfrei
+Seiwal
+    Aufnahme: Sophie van Parijs / NOAA, CC BY-SA 4.0
+    Bild: Christin Khan, NOAA / NEFSC, Public domain
+Minkwal
+    Aufnahme: Helen Rößler (DMM), CC BY-SA 4.0
+    Bild: Kris Mikael Krister, CC BY 3.0
+Schwertwal
+    Aufnahme: Dr. Ilse Van Opzeeland; Alfred Wegener Institute, CC BY-SA 4.0
+    Bild: Ray Slakinski, CC BY-NC_ND 2.0
+Weißwal
+    Aufnahme: Sophie van Parijs (NOAA), CC-BY-SA 4.0
+    Bild: Tony Fox, CC BY-SA 3.0
+Weddellrobbe
+    Aufnahme: Helen Rößler (DMM), CC BY-SA 4.0
+    Bild: Andrew Shiva, CC BY-SA 4.0
+Seeleopard
+    Aufnahme: Ilse Van Opzeeland (AWI) , CC-BY-SA 4.0
+    Bild: Andrew Shiva, CC BY-SA 4.0
+Ross-Robbe
+    Aufnahme: Ilse Van Opzeeland (AWI), CC BY-SA 4.0
+    Bild: Natalie Tapson, CC BY-NC-SA 2.0
+Seehund
+    Aufnahme: Sophie van Parijs (NOAA), Gemeinfrei
+    Bild: Wordless symbol, CC BY-SA 3.0
+
+Lärmaufnahmen
+
+Airguns aus 2400 km Entfernung
+    Aufnahme: Michael Stocker, CC BY-SA 4.0
+Erkundungen zu Öl- und Gasvorkommen
+    Aufnahme: Michael Stocker, CC BY-SA 4.0
+Pfahlgründung, kein Blasenschleier, 14-16 km
+    Aufnahme: Michael Dähne (DMM), CC BY-SA 4.0
+Pfahlgründung, Blasenschleier, 14-16 km
+    Aufnahme: Michael Dähne (DMM), CC BY-SA 4.0
+Pfahlgründung, kein Blasenschleier, 2-4 km
+    Aufnahme: Michael Dähne (DMM), CC BY-SA 4.0
+Pfahlgründung, Blasenschleier, 2-4 km
+    Aufnahme: Michael Dähne (DMM), CC BY-SA 4.0
+
+Grafiken
+
+Icons by Freepik from http://www.flaticon.com
+
+Wissenschaftliche Quellen
+
+Die Audiobearbeitungsalgorithmen basieren auf:
+
+Driedger, J. (2011). Time-scale modification algorithms for music audio signals. Master's thesis, Saarland University
+Southall, B., Bowles, A., Ellison, W. et al. (2007) Aquatic Mammals- Marine Mammal Noise Exposure Criteria: Initial Scientific Recommendations. Aquatic Mammals, 33(4), appendix A, Frequency-selective weighting, p. 500
+Unter diesem Link können Sie mehr über die Filteralgoritmen erfahren. 

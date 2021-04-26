@@ -1,0 +1,7 @@
+<?php
+function mixer_twig_theme($existing, $type, $theme, $path) {
+  return [
+    'mixer_template' => [
+    ],
+  ];
+}

@@ -1,0 +1,1149 @@
+{
+    "base_path": "/modules/custom/hip_mixer/",
+    "start_text": { "de": "<h2>Unterwasser Sound Mixer</h2><p>Unter der Meeresoberfläche herrscht ein reges Treiben und es ist nie still. Umweltgeräusche dienen den Meereslebewesen als akustische Fühler. Sie nutzen Schall zur Kommunikation, Orientierung, Nahrungssuche, Partnersuche und Feindvermeidung. Der Lärmpegel unter Wasser steigt jedoch immer mehr an und damit verändert sich die akustische Unterwasserlandschaft. Je nach Intensität, Dauer und Kontext der Beschallung trägt der Mensch dazu bei, dass Meerestiere so sehr gestört werden, dass sie ihr Verhalten ändern, sich verletzen oder sogar sterben.</p><p>Diese Anwendung macht es möglich, Tierstimmen ausgewählter mariner Arten mit Aufnahmen von Störgeräuschen menschlichen Ursprungs zu mixen.</p><p> Um die akustische Unterwasserwelt zu erkunden, wähle ein Tier aus dem Nord- oder Südpolarmeer. Gleichzeitig kann eine zusätzliche Schallquelle bestimmt werden – die Geräusche überdecken sich und es ist schwieriger, die einzelnen Töne wahrzunehmen.</p><p> Zusätzlich kann die Perspektive gewählt werden, aus der die Geräusche wahrgenommen werden. Die Hörfähigkeit der marinen Tierarten ist sehr unterschiedlich. Die Anwendung filtert die Geräusche mithilfe von bioakustischen Methoden, um die Hörfähigkeit einzelner Tiere zu simulieren.</p><p style=text-align:center><a href='#' onclick='controller.launch(`antarctic`);'>Tauche ein in die akustische Unterwasserwelt und erfahre aus Sicht der Meerestiere, wie Unterwasserlärm ihre Klangkulisse stört</a></p>"},
+    "help_text": { "de": "Hilfetext Platzhalter (klick auf Tier, klick auf Lärm, höre Mix...)"},
+    "frame":[
+        {
+            "id": "Mensch",
+            "enabled": true,
+            "group": "antarctic,north_polar_sea",
+            "species":{
+                "de":"Mensch"
+            },
+            "icon": {
+                "path":"media/diver_icon.png"
+            },
+            "image":{
+                "path":"media/Underwater_mcmurdo_sound.jpg",
+                "credit":"Steve Clabuesch (NSF/USAP)",
+                "license":"Gemeinfrei",
+                "backlink":"https://commons.wikimedia.org/wiki/File:Underwater_mcmurdo_sound.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Rubbing_ice.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Rubbing_ice.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Rubbing_ice.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Rubbing_ice.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Rubbing_ice.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Rubbing_ice.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Rubbing_ice.mp3"
+                },
+                "credit":"Ilse Van Opzeeland (AWI)",
+                "license":"CC-BY-SA 4.0",
+                "backlink":"https://www.awi.de/en/science/climate-sciences/physical-oceanography/main-research-focus/ocean-acoustics-lab.html"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Rubbing_ice_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Rubbing_ice_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Rubbing_ice_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Rubbing_ice_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Rubbing_ice_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Rubbing_ice_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Rubbing_ice_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Rubbing_ice_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Eine Frage der Perspektive</h1> <p>So nehmen wir Menschen die Geräuschkulisse unter Wasser wahr. Wähle ein Tier aus, um aus seiner Perspektive die Geräusche unter Wasser zu hören. Die Hörfähigkeit der marinen Tierarten ist sehr unterschiedlich und daher unterscheidet sich auch das Spektrum der Frequenzen, die sie wahrnehmen.</p>"
+            }
+        },
+        {
+            "id": "Balaenoptera_musculus",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales,deepfrequency",
+            "species":{
+                "de":"Blauwal"
+            },
+            "icon": {
+                "path":"media/Balaenoptera_musculus_icon.png"
+            },
+            "image":{
+                "path":"media/Balaenoptera_musculus.jpg",
+                "credit":"NOAA",
+                "license":"CC BY 2.0",
+                "backlink":"https://www.flickr.com/photos/51647007@N08/5187320081"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_musculus_NOAA.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA.mp3"
+                },
+                "credit":"NOAA",
+                "license":"Gemeinfrei"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Balaenoptera_musculus_NOAA_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_musculus_NOAA_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_musculus_NOAA_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_musculus_NOAA_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Blauwal (<em>Balaenoptera musculus</em>)</h1> Der Blauwal ist das größte Tier der Welt und lebt in allen Ozeanen, bevorzugt allerdings die tieferen Gewässer. Da die Wale in der Regel einzelgängerisch unterwegs sind, nutzen sie ihre immensen Laute zur Kommunikation mit ihren Artgenossen. Ihre stereotypen Rufe liegen im Bereich von 15 bis 40 Hz. Außerhalb des menschlichen Hörbereichs werden diese tiefen Frequenzen jedoch mit enormen Intensitäten von bis zu 189 dB über hunderte Kilometer Unterwasser weitergetragen. Das tiefe Brummen von Motorengeräuschen schwächt jedoch die Reichweite ihrer Kommunikation. Zudem belegten Studien, dass Blauwale bei hochfrequenten Sonaren verstummen und somit auch auf Geräusche außerhalb der eigenen Ruffrequenzen reagieren können."
+            }
+        },
+        {
+            "id": "Balaenoptera_physalus",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales,deepfrequency",
+            "species":{
+                "de":"Finnwal"
+            },
+            "icon": {
+                "path":"media/Balaenoptera_physalus_icon.png"
+            },
+            "image":{
+                "path":"media/Balaenoptera_physalus.jpg",
+                "credit":"Aqqa Rosing-Asvid - Visit Greenland",
+                "license":"CC BY 2.0",
+                "backlink": "https://commons.wikimedia.org/wiki/File:Finhval.jpg"
+            },
+            "recording":{
+                 "paths": {
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_physalus.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus.mp3"
+                },
+               "credit":"Sophie van Parijs / NOAA",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Balaenoptera_physalus_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_physalus_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_physalus_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_physalus_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Finnwal (<em>Balaenoptera physalus</em>)</h1> Finnwale leben in allen Ozeanen der Welt und sind die zweitgrößten Tiere nach ihren Verwandten, den Blauwalen. Mit ihnen teilen sie auch die Eigenschaft, die tiefsten Töne in der Unterwasserwelt zu erzeugen. Ihre Gesänge erreichen abfallende Frequenzen von 30 bis 15 Hz mit einer Unterwasserlautstärke von 184-186 dB. Forscher fanden heraus, dass diese Laute nur von Männchen produziert werden. Da die Wale als Einzelgänger oder in kleinen Gruppen leben, werden die Weibchen so auch über große Entfernungen angelockt."
+            }
+        },
+        {
+            "id": "Physeter_macrocephalus",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales",
+            "species":{
+                "de":"Pottwal"
+            },
+            "icon": {
+                "path":"media/Physeter_macrocephalus_icon.png"
+            },
+            "image":{
+                "path":"media/Physeter_macrocephalus.jpg",
+                "credit":"Gabriel Barathieu",
+                "license":"CC BY SA 2.0",
+                "backlink": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Physeter_macrocephalus.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3"
+                },
+                "credit":"Dr. Shannon Rankin, NOAA/Southwest Fisheries Science Center",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Physeter_macrocephalus_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Physeter_macrocephalus_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Pottwal (<em>Physeter macrocephalus</em>)</h1> Pottwale leben in allen Weltmeeren und stellen im Tierreich gleich mehrere Rekorde auf. Die größte Art der Zahnwale besitzt das größter Gehirn aller Lebewesen und taucht tiefer und länger als alle anderen Säugetiere. Die Tiere jagen in den Tiefen der Ozeane und nutzen für die Echoortung immense Klickgeräusche von bis zu 230 dB zur Orientierung und Suche ihrer Beute. Neben einer lauten Stimme ist auch ein feines Gehör Voraussetzung für die Echoortung. Störgeräusche vom Schiffslärm beeinträchtigen jedoch ihre Sensibilität im Niederfrequenzbereich und so  kollidieren die Wale mit Schiffen, die sie nicht wahrnehmen können."
+            }
+        },
+        {
+            "id": "Eubalaena_glacialis",
+            "enabled": true,
+            "group": "north_polar_sea,whales,deepfrequency",
+            "species":{
+                "de":"Nordkaper"
+            },
+            "icon": {
+                "path":"media/Eubalaena_australis_icon.png"
+            },
+            "image":{
+                "path":"media/Eubalaena_australis.jpg",
+                "credit":"Ecohotel",
+                "license":"CC BY-SA 3.0",
+                "backlink":"https://web.archive.org/web/20161111081206/http://www.panoramio.com/photo/47753710"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Eubalaena_glacialis.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis.mp3"
+                },
+                "credit":"Sophie van Parijs (NOAA)",
+                "license":"CC-BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Eubalaena_glacialis_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Eubalaena_glacialis_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Eubalaena_glacialis_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Eubalaena_glacialis_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Atlantische Nordkaper (<em>Eubalaena glacialis</em>)</h1> Der Atlantische Nordkaper lebte früher im gesamten Nordatlantik und war die erste Walart, die kommerziell gejagt wurde.Heute besiedelt die Art nur noch den küstennahen Bereich des Westatlantiks. Nordkaper leben alleine oder in kleinen Gruppen, stehen aber über sehr große Entfernungen im akustischen Kontakt mit ihren Artgenossen. Die Wale erzeugen eine Vielzahl an niederfrequenten Geräuschen in verschiedenen Einzeltönen oder Tongruppen, ohne dabei richtige „Lieder“ zu singen. Ein typischer Kontaktruf ist ein kurzes, zwei Sekunden langes „Whoop“, das von 50 Hz auf 440 Hz ansteigt. Modellierungen des Hörbereichs vom Atlantischen Nordkaper vermuten eine Hörempfindlichkeit für niedrige Frequenzen, welche mit vielen anthropogenen Lärmquellen überlappt."
+            }
+        },
+        {
+            "id": "Megaptera_novaeangliae",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales,deepfrequency",
+            "species":{
+                "de":"Buckelwal"
+            },
+            "icon": {
+                "path":"media/Megaptera_novaeangliae_icon.png"
+            },
+            "image":{
+                "path":"media/Megaptera_novaeangliae.jpg",
+                "credit":"NOAA",
+                "license":"Gemeinfrei"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Megaptera_novaeangliae.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae.mp3"
+                },
+                "credit":"Helen Rößler (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Megaptera_novaeangliae_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Megaptera_novaeangliae_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Megaptera_novaeangliae_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Megaptera_novaeangliae_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Buckelwal (<em>Megaptera novaeangliae</em>)</h1> Buckelwale leben und wandern zwischen allen Ozeanen der Welt. So ziehen sie von den futterreichen Gebieten in der Arktis und Antarktis in wärmere Regionen zum Fortpflanzen und Aufziehen der Jungtiere. Die Wale sind bekannt für den langen, komplexen und melodischen Gesang aus einer Abfolge von Pfeif- und Quietschtönen sowie tiefen, sonoren Rufen. Besonders männliche Tiere singen ausgeprägte Lieder, um Weibchen anzulocken oder zur Koordinierung bei der Nahrung. Buckelwale führen eine typische Seitenrolle bei der Jagd auf Fische aus. Forscher fanden jedoch heraus, dass die Wale diese Rolle bei Schiffslärm seltener ausführen und somit durch den Lärm aktiv beeinträchtigt werden."
+            }
+        },
+        {
+            "id": "Balaenoptera_borealis",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales,deepfrequency",
+            "species":{
+                "de":"Seiwal"
+            },
+            "icon": {
+                "path":"media/Balaenoptera_borealis_icon.png"
+            },
+            "image":{
+                "path":"media/Balaenoptera_borealis.jpg",
+                "credit":"Christin Khan, NOAA / NEFSC",
+                "license":"Public domain",
+                "backlink": "https://www.fisheries.noaa.gov/species/sei-whale"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_borealis.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis.mp3"
+                },
+                "credit":"Sophie van Parijs / NOAA",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Balaenoptera_borealis_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_borealis_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_borealis_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_borealis_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Seiwal (<em>Balaenoptera borealis</em>)</h1> Der Seiwal lebt fast überall zwischen Subarktis und Subantarktis, bevorzugt jedoch gemäßigte Gewässer und zählt zur schnellsten Großwalart. Seiwale erzeugen verschiedene Laute im Bereich der mittleren und tiefen Frequenzen. Ein typischer Ruf mit abfallender Frequenz von 82-34 Hz wird von Wissenschaftler*innen als Kontaktruf der Tiere assoziiert. Da die Tiere meist einzelgängerisch oder in kleine Gruppen leben, kommunizieren sie über große Entfernungen, um ihre Nahrungs- und Paarungsaktivitäten zu koordinieren."
+            }
+        },
+        {
+            "id": "Balaenoptera_acutorostrata",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales,deepfrequency",
+            "species":{
+                "de":"Minkwal"
+            },
+            "icon": {
+                "path":"media/Balaenoptera_acutorostrata_icon.png"
+            },
+            "image":{
+                "path":"media/Balaenoptera_acutorostrata.jpg",
+                "credit":"Kris Mikael Krister",
+                "license":"CC BY 3.0",
+                "backlink":"https://commons.wikimedia.org/wiki/File:Dwarf_Minke_Whale_Balaenoptera_Acutorostrata_Subspecies_(223124975).jpeg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_acutorostrata.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata.mp3"
+                },
+                "credit":"Helen Rößler (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Balaenoptera_acutorostrata_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Balaenoptera_acutorostrata_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Balaenoptera_acutorostrata_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Balaenoptera_acutorostrata_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Minkwal (<em>Balaenoptera acutorostrata</em>)</h1> Der Zwergwal lebt in allen größeren Weltmeeren und ist der kleinste und häufigste Vertreter der Bartenwale. Er wird in zwei Arten und mehrere Unterarten untergliedert, die alle verschiedene Laute im niederfrequenten Bereich nutzen. Eine Subspezies in der Antarktis erzeugt z.B. einen komplexen stereotypen „Star-Wars“ Gesang. Da die Tiere über große Distanzen kommunizieren, vermutete man ein sensibles Gehör im eigenen Vokalisationsbereich. In einer Studiensimulation zum Gehör eines Zwergwals schien ihr Gehör jedoch auch stark auf ihren größten natürlich Feind, den Killerwal, gepolt zu sein."
+            }
+        },
+        {
+            "id": "Orcinus_orca",
+            "group": "north_polar_sea,antarctic,whales",
+            "enabled": true,
+            "species":{
+                "de":"Schwertwal"
+            },
+            "icon": {
+                "path":"media/Orcinus_orca_icon.png"
+            },
+            "image":{
+                "path":"media/Orcinus_orca.jpg",
+                "credit":"Ray Slakinski",
+                "license":"CC BY-NC_ND 2.0",
+                "backlink":"https://www.flickr.com/photos/35237094053@N01/2508921550"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Orcinus_orca.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Orcinus_orca.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Orcinus_orca.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Orcinus_orca.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Orcinus_orca.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Orcinus_orca.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Orcinus_orca.mp3"
+                },
+                "credit":"Dr. Ilse Van Opzeeland; Alfred Wegener Institute",
+                "license":"CC BY-SA 4.0",
+                "backlink":"https://www.fisheries.noaa.gov/species/killer-whale"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Orcinus_orca_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Orcinus_orca_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Orcinus_orca_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Orcinus_orca_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Orcinus_orca_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Orcinus_orca_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Orcinus_orca_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Orcinus_orca_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Schwertwal (<em>Orcinus orca</em>)</h1> Der Schwertwal, der größte Vertreter der Delfine, lebt in allen Weltmeeren. Die Tiere leben in großen Gruppen und kommunizieren sogar in eigenen Dialekten. In dieser Gruppe erlernen sie Fähigkeiten zum Jagen, zur sozialen Interaktion und das Wissen über geeignete Gebiete für die Nahrung, Paarung und über die Wanderrouten. Sie erzeugen Töne von 0,1 kHz bis ungefähr 40 kHz, die oft einem Schreien ähneln sowie pulsierende Geräusche und Klicks mit Geschwindigkeiten von bis zu 5000 pro Sekunde. Schwertwale sind in der Lage sowohl tiefe, aber auch sehr hohe Frequenzen für die Echoortung wahrzunehmen."
+            }
+        },
+        {
+            "id": "Delphinapterus_leucas",
+            "enabled": true,
+            "group": "north_polar_sea,whales",
+            "species":{
+                "de":"Weißwal"
+            },
+            "icon": {
+                "path":"media/Delphinapterus_leucas_icon.png"
+            },
+            "image":{
+                "path":"media/Delphinapterus_leucas.jpg",
+                "credit":"Tony Fox",
+                "license":"CC BY-SA 3.0",
+                "backlink":"https://commons.wikimedia.org/wiki/File:Aurora_and_baby_2_-_vancouver_aquarium.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Delphinapterus_leucas.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas.mp3"
+                },
+                "credit":"Sophie van Parijs (NOAA)",
+                "license":"CC-BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Delphinapterus_leucas_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Delphinapterus_leucas_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Delphinapterus_leucas_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Delphinapterus_leucas_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Weißwal (<em>Delphinapterus leucas</em>)</h1> Der Beluga oder auch Weißwal genannt, lebt in den arktischen und subarktischen Gewässern, wo seine weiße Farbe perfekt als Tarnung zur Geltung kommt. Ihr großes Repertoire an Klängen wie Quietschen, Brummen, Trillern, Zwitschern und Klicklauten beschert den Belugas nicht umsonst den Spitznamen „Kanarienvögel der Weltmeere“. Sie sind die einzigen Zahnwale, die dafür die Form ihrer Melone bewusst verändern können, um so die verschiedensten Töne erzeugen zu können. Im Durchschnitt liegen ihre Rufe in einem Frequenzbereich von 2,0 bis 5,9 kHz. Weißwale sind in der Lage sowohl tiefe, aber auch sehr hohe Frequenzen für ihre Echoortung wahrzunehmen."
+            }
+        },
+        {
+            "id": "Leptonychotes_weddellii",
+            "enabled": true,
+            "group": "antarctic,pinnipeds",
+            "species":{
+                "de":"Weddellrobbe"
+            },
+            "icon": {
+                "path":"media/Leptonychotes_weddellii_icon.png"
+            },
+            "image":{
+                "path":"media/Leptonychotes_weddellii.jpg",
+                "credit":"Andrew Shiva",
+                "license":"CC BY-SA 4.0",
+                "backlink":"https://commons.wikimedia.org/wiki/File:Mikkelsen_Harbour-2016-Trinity_Island_(D%27Hainaut_Island)%E2%80%93Weddell_seal_(Leptonychotes_weddellii)_03.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Leptonychotes_weddellii.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii.mp3"
+                },
+                "credit":"Helen Rößler (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Leptonychotes_weddellii_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Leptonychotes_weddellii_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Leptonychotes_weddellii_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Leptonychotes_weddellii_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Weddellrobbe (<em>Leptonychotes weddellii</em>)</h1> Die Weddellrobbe zählt zu den häufigsten Robben der Antarktis und ist gleichzeitig das am weitesten südlich anzutreffende Säugetier. Die meiste Zeit ihres Lebens verbringen die Tiere unter Wasser und nutzen dabei bis zu 40 verschiedenen Laute, die man fast das gesamte Jahr hören kann.  Vermutlich korrelieren diese vielfältigen Laute mit Aktivitäten, wie der Revierverteidigung, ihren ausgeklügelten Jagdstrategien oder der sozialen Interaktion. Der Frequenzbereich ihrer pfeifenden, zwitschernden und brummenden Klänge beträgt 80Hz-24kHz. Robben besitzen ein exzellentes Gehör und gerade das hochentwickelte Stimmverhalten der Weddellrobbe impliziert eine hohe Sensibilität auf akustische Störungen."
+            }
+        },
+        {
+            "id": "Hydrurga_leptonyx",
+            "enabled": true,
+            "group": "antarctic,pinnipeds",
+            "species":{
+                "de":"Seeleopard"
+            },
+            "icon": {
+                "path":"media/Hydrurga_leptonyx_icon.png"
+            },
+            "image":{
+                "path":"media/Hydrurga_leptonyx.jpg",
+                "credit":"Andrew Shiva",
+                "license":"CC BY-SA 4.0",
+                "backlink": "https://commons.wikimedia.org/wiki/File:Antarctic_Sound-2016-Brown_Bluff%E2%80%93Leopard_seal_(Hydrurga_leptonyx)_04.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Hydrurga_leptonyx.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx.mp3"
+                },
+                "credit":"Ilse Van Opzeeland (AWI) ",
+                "license":"CC-BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Hydrurga_leptonyx_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Hydrurga_leptonyx_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Hydrurga_leptonyx_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Hydrurga_leptonyx_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Seeleopard (<em>Hydrurga leptonyx</em>)</h1> Der Seeleopard lebt in den südpolaren Gewässern und ist die größte Robbe der Antarktis. Ihr Name geht auf das gefleckte Fell und die einzelgängerische Jagdtechnik zurück, bei der sie ihrer Beute sogar auflauern. Während der Paarungszeit sind die Männchen und Weibchen sehr kommunikativ und rufen einander über große Distanzen. Männliche Seeleoparden erzeugen Unterwasser stereotype Rufe mit tiefen und hohen Frequenzen sowie modellierte Rufen von 50 Hz bis 8 kHz. Ihr Repertoire weist dabei individuelle, altersbedingte und geografische Unterschiede auf. "
+            }
+        },
+        {
+            "id": "Ommatophoca_rossii",
+            "enabled": true,
+            "group": "antarctic,pinnipeds",
+            "species":{
+                "de":"Ross-Robbe"
+            },
+            "icon": {
+                "path":"media/Ommatophoca_rossii_icon.png"
+            },
+            "image":{
+                "path":"media/Ommatophoca_rossii.jpg",
+                "credit":"Natalie Tapson",
+                "license":"CC BY-NC-SA 2.0",
+                "backlink": "https://www.flickr.com/photos/40325561@N04/15025618824/in/album-72157648099464507/"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Ommatophoca_rossii.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii.mp3"
+                },
+                "credit":"Ilse Van Opzeeland (AWI)",
+                "license":"CC BY-SA 4.0",
+                "backlink":"https://www.awi.de/en/science/climate-sciences/physical-oceanography/main-research-focus/ocean-acoustics-lab.html"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Ommatophoca_rossii_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Ommatophoca_rossii_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Ommatophoca_rossii_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Ommatophoca_rossii_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Ross-Robbe (<em>Ommatophoca rossii</em>)</h1> Die Rossrobbe zählt zu den seltensten Tieren der Antarktis und ist wenig erforscht. Diese kleinste Art der antarktischen Robben lebt als Einzelgänger im dichten Packeis oder auf Eisschollen in offenen Gebieten. Rossrobben erzeugen vielfältige Geräusche für die Kommunikation mit anderen Artgenossen oder als Abwehrrufe bei Räubern. Sie besitzen einen Stimmapparat, der ihnen das Erzeugen zwitschernder Laute und Sirenen ähnlicher Klänge mit geschlossenem Mund ermöglicht. Vor allem unter Wasser werden diese einzigartigen Vokalisationen über große Entfernungen weitergetragen."
+            }
+        },
+        {
+            "id": "Phoca_vitulina",
+            "enabled": true,
+            "group": "north_polar_sea,pinnipeds",
+            "species":{
+                "de":"Seehund"
+            },
+            "icon": {
+                "path":"media/Phoca_vitulina_icon.png"
+            },
+            "image":{
+                "path":"media/Phoca_vitulina.jpg",
+                "credit":"Wordless symbol",
+                "license":"CC BY-SA 3.0",
+                "backlink":"https://commons.wikimedia.org/wiki/Category:Underwater_photographs_of_mammals?uselang=de#/media/File:Pinniped_underwater.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Phoca_vitulina.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Phoca_vitulina.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Phoca_vitulina.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Phoca_vitulina.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Phoca_vitulina.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina.mp3"
+                },
+                "credit":"Sophie van Parijs (NOAA)",
+                "license":"Gemeinfrei"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Phoca_vitulina_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Phoca_vitulina_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Phoca_vitulina_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Phoca_vitulina_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Phoca_vitulina_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Phoca_vitulina_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Phoca_vitulina_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Seehund (<em>Phoca vitulina</em>)</h1> Der Seehund zählt zu den kleineren Robben und lebt auf der Nordhalbkugel an den Küsten des Atlantiks und Pazifiks. Die Tiere nutzen akustische Signale an Land und unter Wasser für Kontaktrufe zwischen Jungtier und Mutter, zur individuellen Erkennung und die Männchen auch, um  Weibchen zu werben oder um ihre Territorien abzugrenzen.  Zu ihrer Unterwasservokalisation gehört ein Brüllen mit einer Spitzenfrequenz von ungefähr 1,2 kHz, während ihr funktionaler Hörbereich sich von sehr tiefen bis zu hohen Frequenzen erstreckt."
+            }
+        }
+    ],
+    "noise": [
+        {
+            "title": {
+                "de":"Airguns aus 2400 km Entfernung"
+            },
+            "text": {
+                "de":"<h1>Airguns / Erkundung von Öl und Gasvorkommen</h1> Airguns sind Schallkanonen, die mit aufeinanderfolgenden Explosionen den Meeresboden erkunden und kartieren. Dabei können mehrere Kanonen innerhalb von wenigen Sekunden gleichzeitig abgefeuert werden. Die Schallwelle durchdringt die gesamte Wassersäule und dringt weit in den Meeresboden hinein. Ein Schuss erzeugt einen massiven Schalldruck von bis zu 260dB, der Tiere in direkter Umgebung töten kann, aber auch auf größere Distanzen schädigend und störend auf sie wirkt."
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Airguns_1x_speed_2400_km_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Airguns_1x_speed_2400_km_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km_wave.png"
+                }
+            },
+            "recording": {
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Airguns_1x_speed_2400_km.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Airguns_1x_speed_2400_km.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Airguns_1x_speed_2400_km.mp3"
+                },
+                "credit":"Michael Stocker",
+                "license":"CC BY-SA 4.0"
+            },
+           "field": "far",
+            "icon": {
+                "path": "icons/Echosounder_red.png",
+                "pos": {"x":800, "y":167}
+            }
+        },
+        {
+            "title": {
+                "de":"Erkundungen zu Öl- und Gasvorkommen"
+            },
+            "text": {
+                "de":"<h1>Airguns / Erkundung von Öl und Gasvorkommen</h1> Airguns sind Schallkanonen, die mit aufeinanderfolgenden Explosionen den Meeresboden erkunden und kartieren. Dabei können mehrere Kanonen innerhalb von wenigen Sekunden gleichzeitig abgefeuert werden. Die Schallwelle durchdringt die gesamte Wassersäule und dringt weit in den Meeresboden hinein. Ein Schuss erzeugt einen massiven Schalldruck von bis zu 260dB, der Tiere in direkter Umgebung töten kann, aber auch auf größere Distanzen schädigend und störend auf sie wirkt."
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_airgun_and_echosounders_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_airgun_and_echosounders_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders_wave.png"
+                }
+            },
+            "recording": {
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_airgun_and_echosounders.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_airgun_and_echosounders.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_airgun_and_echosounders.mp3"
+                 },
+                "credit":"Michael Stocker",
+                "license":"CC BY-SA 4.0"
+            },
+            "field": "near",
+            "icon": {
+                "path": "icons/Echosounder_red.png",
+                "pos": {"x":400, "y":150}
+            }
+        },
+        {
+            "title": {
+                "de":"Pfahlgründung, kein Blasenschleier, 14-16 km"
+            },
+            "text": {
+                "de":"<h1>Pfahlgründung</h1> Für den Bau von Offshore-Windkraftanlagen oder Plattformen für die Öl- und Gasförderung werden Pfeiler mehr als 50 Meter tief in den Meeresboden gerammt. Mehrere tausend Schläge vergehen bis ein Pfeiler mit bis zu neun Meter Durchmesser im Boden verankert ist. Zum Schutz der Tiere wurde in Deutschland ein Lärmgrenzwert von 160 dB festgelegt. Dieser soll mit Hilfe von sogenannten Blasenschleiern eingehalten werden, welche den Schallpegel um bis zu 14 dB senken und die Lautstärke um über 90% reduzieren."
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_PileDriving_14-16km_keinBlasenschleierMedien1_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1_wave.png"
+                }
+            },
+            "recording": {
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_keinBlasenschleierMedien1.mp3"
+                },
+                "credit":"Michael Dähne (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "field": "far",
+            "icon": {
+                "path": "icons/PileDriving_red.png",
+                "pos": {"x":720, "y":161}
+            }
+        },
+        {
+            "title": {
+                "de":"Pfahlgründung, Blasenschleier, 14-16 km"
+            },
+            "text": {
+                "de":"<h1>Pfahlgründung</h1> Für den Bau von Offshore-Windkraftanlagen oder Plattformen für die Öl- und Gasförderung werden Pfeiler mehr als 50 Meter tief in den Meeresboden gerammt. Mehrere tausend Schläge vergehen bis ein Pfeiler mit bis zu neun Meter Durchmesser im Boden verankert ist. Zum Schutz der Tiere wurde in Deutschland ein Lärmgrenzwert von 160 dB festgelegt. Dieser soll mit Hilfe von sogenannten Blasenschleiern eingehalten werden, welche den Schallpegel um bis zu 14 dB senken und die Lautstärke um über 90% reduzieren."
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_PileDriving_14-16km_Blasenschleier_v2_Medien1_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1_wave.png"
+                }
+            },
+            "recording": {
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_14-16km_Blasenschleier_v2_Medien1.mp3"
+                },
+                "credit":"Michael Dähne (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "field": "far",
+            "icon": {
+                "path": "icons/PileDrivingBubbles_red.png",
+                "pos": {"x":640, "y":166}
+            }
+        },
+        {
+            "title": {
+                "de":"Pfahlgründung, kein Blasenschleier, 2-4 km"
+            },
+            "text": {
+                "de":"<h1>Pfahlgründung</h1> Für den Bau von Offshore-Windkraftanlagen oder Plattformen für die Öl- und Gasförderung werden Pfeiler mehr als 50 Meter tief in den Meeresboden gerammt. Mehrere tausend Schläge vergehen bis ein Pfeiler mit bis zu neun Meter Durchmesser im Boden verankert ist. Zum Schutz der Tiere wurde in Deutschland ein Lärmgrenzwert von 160 dB festgelegt. Dieser soll mit Hilfe von sogenannten Blasenschleiern eingehalten werden, welche den Schallpegel um bis zu 14 dB senken und die Lautstärke um über 90% reduzieren."
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_PileDriving_2-4km_keinBlasenschleierMedien1_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1_wave.png"
+                }
+            },
+            "recording": {
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_keinBlasenschleierMedien1.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_keinBlasenschleierMedien1.mp3"
+                },
+                "credit":"Michael Dähne (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "field": "near",
+            "icon": {
+                "path": "icons/PileDriving_red.png",
+                "pos": {"x":560, "y":145}
+            }
+        },
+        {
+            "title": {
+                "de":"Pfahlgründung, Blasenschleier, 2-4 km"
+            },
+            "text": {
+                "de":"<h1>Pfahlgründung</h1> Für den Bau von Offshore-Windkraftanlagen oder Plattformen für die Öl- und Gasförderung werden Pfeiler mehr als 50 Meter tief in den Meeresboden gerammt. Mehrere tausend Schläge vergehen bis ein Pfeiler mit bis zu neun Meter Durchmesser im Boden verankert ist. Zum Schutz der Tiere wurde in Deutschland ein Lärmgrenzwert von 160 dB festgelegt. Dieser soll mit Hilfe von sogenannten Blasenschleiern eingehalten werden, welche den Schallpegel um bis zu 14 dB senken und die Lautstärke um über 90% reduzieren."
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_PileDriving_2-4km_Blasenschleier_v1_Medien1_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1_wave.png"
+                }
+            },
+            "recording": {
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Filtered_mensch_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_PileDriving_2-4km_Blasenschleier_v1_Medien1.mp3"
+                },
+                "credit":"Michael Dähne (DMM)",
+                "license":"CC BY-SA 4.0"
+            },
+            "field": "near",
+            "icon": {
+                "path": "icons/PileDrivingBubbles_red.png",
+                "pos": {"x":480, "y":151}
+            }
+        }
+    ]
+}

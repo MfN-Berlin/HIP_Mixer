@@ -1,0 +1,71 @@
+<!--
+    @see https://code.naturkundemuseum.berlin/Alvaro.Ortiz/Pinguine/tree/master/docs
+  -->
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
+<link rel="stylesheet" type="text/css" href="/modules/custom/hip_mixer/css/mixer.css"/>
+<script src="/modules/custom/hip_mixer/js/jquery.min.js"></script>
+
+<script src="/modules/custom/hip_mixer/js/Abstract.js"></script>
+<script src="/modules/custom/hip_mixer/js/Media.js"></script>
+<script src="/modules/custom/hip_mixer/js/MixerModel.js"></script>
+<script src="/modules/custom/hip_mixer/js/StartView.js"></script>
+<script src="/modules/custom/hip_mixer/js/SelectorView.js"></script>
+<script src="/modules/custom/hip_mixer/js/CreditsView.js"></script>
+<script src="/modules/custom/hip_mixer/js/TextView.js"></script>
+<script src="/modules/custom/hip_mixer/js/OceanView.js"></script>
+<script src="/modules/custom/hip_mixer/js/HTML5Player.js"></script>
+<script src="/modules/custom/hip_mixer/js/SoundView.js"></script>
+<script src="/modules/custom/hip_mixer/js/MixerController.js"></script>
+
+
+<script language="javascript">
+  /** Path to media folder */
+  const BASE_PATH = "/modules/custom/hip_mixer";
+  
+  var controller; // controller should accessible for the page buttons
+  
+  // Instantiate MVC, load configuration, draw launch screen (model.reset)
+  document.addEventListener('DOMContentLoaded', function() {
+      try {
+	  var model = new MixerModel();
+          model.setBasePath(BASE_PATH);
+	  controller = new MixerController(model);
+	  controller.loadConfiguration("config.json");
+
+          // Instantiate the views AFTER the configuration has been loaded
+          var start = new StartView(model);
+	  model.addObserver(start);
+	  var selector = new SelectorView(model);
+	  model.addObserver(selector);
+          var credits = new CreditsView(model);
+	  model.addObserver(credits);
+          var text = new TextView(model);
+	  model.addObserver(text);
+          var ocean = new OceanView(model);
+	  model.addObserver(ocean);
+          var playerFactory = new HTML5PlayerFactory();
+          var sound = new SoundView(model, playerFactory);
+	  model.addObserver(sound);
+ 
+          // Resetting the model's state starts the mixer
+          // and notifies the views.
+	  model.reset();
+          
+      } catch(err) {
+	  console.log(err);
+      }
+  });
+</script>
+<div id="wrapper">
+  <div id="start"></div>
+  <div id="quit"></div>
+  <div id="credits"></div>
+  <div id="row1">
+    <div id="ocean"></div>
+    <div id="selector"></div>
+    <div id="noise_info"></div>
+  </div>
+  <div id="sound"></div>
+  <div id="text"></div>
+  <div id="footer"></div>
+</div>

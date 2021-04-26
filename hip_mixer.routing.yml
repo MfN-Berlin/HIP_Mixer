@@ -1,0 +1,6 @@
+hip_mixer.content:
+  path: '/mixer'
+  defaults:
+    _controller: '\Drupal\hip_mixer\Controller\MixerController::play'
+  requirements:
+    _permission: 'access content'
