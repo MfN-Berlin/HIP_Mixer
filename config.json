@@ -182,65 +182,6 @@
             }
         },
         {
-            "id": "Physeter_macrocephalus",
-            "enabled": true,
-            "group": "north_polar_sea,antarctic,whales",
-            "species":{
-                "de":"Pottwal"
-            },
-            "icon": {
-                "path":"media/Physeter_macrocephalus_icon.png"
-            },
-            "image":{
-                "path":"media/Physeter_macrocephalus.jpg",
-                "credit":"Gabriel Barathieu",
-                "license":"CC BY SA 2.0",
-                "backlink": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg"
-            },
-            "recording":{
-                "paths": {
-                    "Mensch": "media/Filtered_mensch_Physeter_macrocephalus.mp3",
-                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
-                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
-                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
-                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
-                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
-                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3"
-                },
-                "credit":"Dr. Shannon Rankin, NOAA/Southwest Fisheries Science Center",
-                "license":"CC BY-SA 4.0"
-            },
-            "visualization": {
-                "spectrogram":"media/Filtered_mensch_Physeter_macrocephalus_spg.png",
-                "waveform":{
-                    "Mensch": "media/Filtered_mensch_Physeter_macrocephalus_wave.png",
-                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
-                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
-                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
-                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
-                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
-                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png"
-                }
-            },
-            "text": {
-                "de": "<h1>Pottwal (<em>Physeter macrocephalus</em>)</h1> Pottwale leben in allen Weltmeeren und stellen im Tierreich gleich mehrere Rekorde auf. Die größte Art der Zahnwale besitzt das größter Gehirn aller Lebewesen und taucht tiefer und länger als alle anderen Säugetiere. Die Tiere jagen in den Tiefen der Ozeane und nutzen für die Echoortung immense Klickgeräusche von bis zu 230 dB zur Orientierung und Suche ihrer Beute. Neben einer lauten Stimme ist auch ein feines Gehör Voraussetzung für die Echoortung. Störgeräusche vom Schiffslärm beeinträchtigen jedoch ihre Sensibilität im Niederfrequenzbereich und so  kollidieren die Wale mit Schiffen, die sie nicht wahrnehmen können."
-            }
-        },
-        {
             "id": "Eubalaena_glacialis",
             "enabled": true,
             "group": "north_polar_sea,whales,deepfrequency",
@@ -473,6 +414,65 @@
             },
             "text": {
                 "de": "<h1>Minkwal (<em>Balaenoptera acutorostrata</em>)</h1> Der Zwergwal lebt in allen größeren Weltmeeren und ist der kleinste und häufigste Vertreter der Bartenwale. Er wird in zwei Arten und mehrere Unterarten untergliedert, die alle verschiedene Laute im niederfrequenten Bereich nutzen. Eine Subspezies in der Antarktis erzeugt z.B. einen komplexen stereotypen „Star-Wars“ Gesang. Da die Tiere über große Distanzen kommunizieren, vermutete man ein sensibles Gehör im eigenen Vokalisationsbereich. In einer Studiensimulation zum Gehör eines Zwergwals schien ihr Gehör jedoch auch stark auf ihren größten natürlich Feind, den Killerwal, gepolt zu sein."
+            }
+        },
+        {
+            "id": "Physeter_macrocephalus",
+            "enabled": true,
+            "group": "north_polar_sea,antarctic,whales",
+            "species":{
+                "de":"Pottwal"
+            },
+            "icon": {
+                "path":"media/Physeter_macrocephalus_icon.png"
+            },
+            "image":{
+                "path":"media/Physeter_macrocephalus.jpg",
+                "credit":"Gabriel Barathieu",
+                "license":"CC BY SA 2.0",
+                "backlink": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg"
+            },
+            "recording":{
+                "paths": {
+                    "Mensch": "media/Filtered_mensch_Physeter_macrocephalus.mp3",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus.mp3",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus.mp3"
+                },
+                "credit":"Dr. Shannon Rankin, NOAA/Southwest Fisheries Science Center",
+                "license":"CC BY-SA 4.0"
+            },
+            "visualization": {
+                "spectrogram":"media/Filtered_mensch_Physeter_macrocephalus_spg.png",
+                "waveform":{
+                    "Mensch": "media/Filtered_mensch_Physeter_macrocephalus_wave.png",
+                    "Delphinapterus_leucas": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Orcinus_orca": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Phoca_vitulina": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Leptonychotes_weddellii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Eubalaena_glacialis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_acutorostrata": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Megaptera_novaeangliae": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Physeter_macrocephalus": "media/Filtered_mid-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_physalus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_borealis": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png",
+                    "Hydrurga_leptonyx": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Ommatophoca_rossii": "media/Filtered_pinnipeds_in_water_Physeter_macrocephalus_wave.png",
+                    "Balaenoptera_musculus": "media/Filtered_low-frequency_cetaceans_Physeter_macrocephalus_wave.png"
+                }
+            },
+            "text": {
+                "de": "<h1>Pottwal (<em>Physeter macrocephalus</em>)</h1> Pottwale leben in allen Weltmeeren und stellen im Tierreich gleich mehrere Rekorde auf. Die größte Art der Zahnwale besitzt das größter Gehirn aller Lebewesen und taucht tiefer und länger als alle anderen Säugetiere. Die Tiere jagen in den Tiefen der Ozeane und nutzen für die Echoortung immense Klickgeräusche von bis zu 230 dB zur Orientierung und Suche ihrer Beute. Neben einer lauten Stimme ist auch ein feines Gehör Voraussetzung für die Echoortung. Störgeräusche vom Schiffslärm beeinträchtigen jedoch ihre Sensibilität im Niederfrequenzbereich und so  kollidieren die Wale mit Schiffen, die sie nicht wahrnehmen können."
             }
         },
         {

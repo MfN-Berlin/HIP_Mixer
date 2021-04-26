@@ -337,7 +337,7 @@ img.taxon_selector {
     opacity: 0.7;
 }
 
-#selector .selected .icon,
+#selector .selected .icon, #selector .highlighted .icon,
 #calls .selected .icon
 {
     opacity: 1;

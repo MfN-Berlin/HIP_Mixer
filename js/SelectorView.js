@@ -63,7 +63,10 @@ class SelectorView extends AbstractView {
             // display animals in selected group
             if (f.group.includes(group)) {
                 var isSelected = (currentFrame && f == currentFrame);
-                content += this._drawIcon(i, f, isSelected);
+                var sameGroup = (currentFrame && currentFrame.group.toString() == f.group.toString())
+                
+                //var isHighlighted = ()
+                content += this._drawIcon(i, f, isSelected, sameGroup);
                 counter += 1;
                 if (counter >= SelectorView.MAX_ANIMALS) break;
             }
@@ -89,9 +92,10 @@ class SelectorView extends AbstractView {
      * frame Frame object corresponding to this icon
      * isSelected boolean is the icon currently selected
      */
-    _drawIcon(index, frame, isSelected=false) {
+    _drawIcon(index, frame, isSelected=false, sameGroup=false) {
         var selectedClass = (isSelected)? "selected": "";
-        var resp = `<div class="icon_wrapper ${selectedClass}" onclick="controller.select(${index});">
+        var highlightedClass = (sameGroup)? "highlighted": ""; // in the same group as selected
+        var resp = `<div class="icon_wrapper ${selectedClass} ${highlightedClass}" onclick="controller.select(${index});">
                     <img src="${frame.icon.path}" class="icon"/>
                     <div class="name">${frame.species.de}</div>
                     </div>`;
