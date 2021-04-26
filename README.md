@@ -1,6 +1,6 @@
 Mixer für das Pinguinprojekt.
 
-Diese Version beinhaltet nur Audios unter freie Lizenzen.
+Diese Version beinhaltet nur Audios unter freien Lizenzen.
 
 https://unterwasserlaerm.museumfuernaturkunde.berlin/mixer
 
